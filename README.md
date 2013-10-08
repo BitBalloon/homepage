@@ -6,11 +6,11 @@ To build the site:
 
 1. git clone git@github.com:BitBalloon/homepage.git
 2. cd homepage
-3. git submodul update --init
+3. git submodule update --init
 4. npm install punch-sass-compiler
 5. punch g
 
-To run a preview server, follow the same steps but run `punch p` instead of step 5.
+To run a preview server, follow the same steps but run `punch s` instead of step 5.
 
 # Deploying to BitBalloon
 
