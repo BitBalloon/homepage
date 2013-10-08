@@ -250,6 +250,11 @@
   }
 }
 
+.steps { list-style: none; padding: 0; margin: 1em 0 1.25em; font-weight: bold; }
+.steps li { margin-bottom: 0.2em; }
+.steps img { width: 1em; margin-right: 0.3em; vertical-align: top; }
+
+
 .features {
   margin-top: 2.5em;
   h2 {
@@ -267,8 +272,8 @@
       &.icon-cloud-upload { font-size: 1.15em; top: 0em; }
       &.icon-form { font-size: 1.5em; top: -.1em; }
       &.icon-rocket { font-size: 1.5em;  }
-      &.icon-robot { font-size: 1.7em; top: -.2em; left: -.05em; }
       &.icon-unlocked { font-size: 1.6em; }
+      &.icon-robot { font-size: 1.7em; top: -.2em; left: -.05em; }
     }
   }
   p {
@@ -276,9 +281,60 @@
   }
 }
 
-.steps { list-style: none; padding: 0; margin: 1em 0 1.25em; font-weight: bold; }
-.steps li { margin-bottom: 0.2em; }
-.steps img { width: 1em; margin-right: 0.3em; vertical-align: top; }
+
+.programmable {
+  background: #e8ebee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 30px -40px;
+  padding: 30px 40px;
+  p {
+    font-size: 1.4em;
+    a { margin-left: .4em; }
+  }
+  h2 { margin-top: 1em}
+  i { position: relative; }
+  .icon-balloon-bot{
+    font-size: 11em;
+    top: -.05em;
+  }
+  .icon-brand {
+    font-size: 9em;
+    top: .1em;
+  }
+}
+
+
+.examples {
+  margin: 30px -40px;
+  padding: 30px 40px;
+
+  img {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    margin: 20px 0 14px;
+    width: 100%;
+  }
+  .button {
+    position: relative;
+    color: #000 !important;
+    margin: 0px auto;
+    display: block;
+    background: #FFF;
+    font-weight: 500;
+    text-shadow: none;
+    margin: 0 auto;
+    max-width: 215px;
+    text-align: left;
+    padding: 1em 0 1em 4.3em;
+    line-height: 1.2em;
+    i {
+      top: .4em;
+      left: .8em;
+      font-size: 1.7em;
+      position: absolute;
+    }
+  }
+}
 
 
 
@@ -960,39 +1016,6 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
 .gondola-stats dt { float: left; width: 60%; }
 .gondola-stats dd a { margin-left: 10px; }
 .jobs-table { width: 100%; }
-
-.examples {
-  background: #e8ebee;
-  margin: 30px -40px;
-  padding: 30px 40px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  img {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    margin: 20px 0 14px;
-    width: 100%;
-  }
-  .button {
-    position: relative;
-    color: #000 !important;
-    margin: 0px auto;
-    display: block;
-    background: #FFF;
-    font-weight: 500;
-    text-shadow: none;
-    margin: 0 auto;
-    max-width: 215px;
-    text-align: left;
-    padding: 1em 0 1em 4.3em;
-    line-height: 1.2em;
-    i {
-      top: .4em;
-      left: .8em;
-      font-size: 1.7em;
-      position: absolute;
-    }
-  }
-}
 
 
 
