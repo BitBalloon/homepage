@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'icomoon';
     src:url('/fonts/icomoon.eot');
@@ -28,7 +30,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-triangle-down, .icon-site, .icon-process-icon, .icon-play-button, .icon-inbox, .icon-grey-cloud, .icon-google-plus-icon, .icon-checkmark, .icon-alert-icon, .icon-back, .icon-bag-of-money-icon, .icon-balloon, .icon-signal, .icon-cloud-icon, .icon-twitter-icon, .icon-connect, .icon-box-plus, .icon-plus, .icon-question, .icon-download, .icon-close, .icon-gears, .icon-facebook-icon, .icon-external-link-icon, .icon-drag-icon, .icon-cloud-working-icon, .icon-mail, .icon-lightning, .icon-briefcase, .icon-octocat, .icon-gem, .icon-gear, .icon-code, .icon-doc, .icon-white-label, .icon-globe, .icon-unlocked, .icon-locked, .icon-edit, .icon-trash, .icon-form {
+.icon-triangle-down, .icon-site, .icon-process-icon, .icon-play-button, .icon-inbox, .icon-grey-cloud, .icon-google-plus-icon, .icon-checkmark, .icon-alert-icon, .icon-back, .icon-bag-of-money-icon, .icon-balloon, .icon-signal, .icon-cloud-icon, .icon-twitter-icon, .icon-connect, .icon-box-plus, .icon-plus, .icon-question, .icon-download, .icon-close, .icon-gears, .icon-facebook-icon, .icon-external-link-icon, .icon-drag-icon, .icon-cloud-working-icon, .icon-mail, .icon-lightning, .icon-briefcase, .icon-octocat, .icon-gem, .icon-gear, .icon-code, .icon-doc, .icon-white-label, .icon-globe, .icon-unlocked, .icon-locked, .icon-edit, .icon-trash, .icon-form, .icon-smiley, .icon-versions, .icon-rocket, .icon-user, .icon-robot, .icon-inject, .icon-cloud-upload {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -160,4 +162,25 @@ you can use the generic selector below, but it's slower:
 }
 .icon-form:before {
     content: "\e028";
+}
+.icon-smiley:before {
+    content: "\e029";
+}
+.icon-versions:before {
+    content: "\e02a";
+}
+.icon-rocket:before {
+    content: "\e02b";
+}
+.icon-user:before {
+    content: "\e02c";
+}
+.icon-robot:before {
+    content: "\e02d";
+}
+.icon-inject:before {
+    content: "\e02e";
+}
+.icon-cloud-upload:before {
+    content: "\e02f";
 }

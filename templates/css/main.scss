@@ -251,13 +251,25 @@
 }
 
 .features {
-  margin-top: 40px;
-  h3 i {
-    font-size: 1.4em;
+  margin-top: 2.5em;
+  h2 {
+    margin-bottom: 1em;
+  }
+  h3 {
+    margin-bottom: .3em;
     position: relative;
-    top: .11em;
-    &.icon-form { margin-right: .05em; }
-    &.icon-signal { margin-right: -.1em; }
+    padding-left: 1.8em;
+    i {
+      left: 0;
+      top: -.1em;
+      font-size: 1.4em;
+      position: absolute;
+      &.icon-cloud-upload { font-size: 1.15em; top: 0em; }
+      &.icon-form { font-size: 1.5em; top: -.1em; }
+      &.icon-rocket { font-size: 1.5em;  }
+      &.icon-robot { font-size: 1.7em; top: -.2em; left: -.05em; }
+      &.icon-unlocked { font-size: 1.6em; }
+    }
   }
   p {
     max-width: 320px;

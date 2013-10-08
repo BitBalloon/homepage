@@ -2,3 +2,4 @@ node_modules/
 output/
 .sass-cache/
 .bitballoon
+.DS_Store
