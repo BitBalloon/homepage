@@ -11,3 +11,14 @@ To build the site:
 5. punch g
 
 To run a preview server, follow the same steps but run `punch p` instead of step 5.
+
+# Deploying to BitBalloon
+
+From the root of the repository
+
+1. gem install bitballoon
+2. bitballoon deploy output
+
+And *Boom* your very own BitBalloon site is live.
+
+Contact team@bitballoon.com if you're interested in running your own white-label BitBalloon based hosting service.
