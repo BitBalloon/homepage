@@ -6,7 +6,7 @@ To build the site:
 
 1. git clone git@github.com:BitBalloon/homepage.git
 2. cd homepage
-3. git submodul update --init
+3. git submodule update --init
 4. npm install punch-sass-compiler
 5. punch g
 
