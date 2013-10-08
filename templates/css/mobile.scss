@@ -1,0 +1,123 @@
+@media #{$large} {
+  .new.project-card {
+    .icon-cloud-icon {
+      margin-top: 50px;
+    }
+  }
+}
+
+
+
+@media #{$medium} {
+  .dropzone .how-to>li {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: -15px;
+    margin-right: -28px;
+  }
+
+  .chart.numeric h4 {
+    font-size: 15px;
+  }
+  .new.project-card {
+    .headline {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  }
+
+  .dropzone .headline {
+    margin-top: 0.8em;
+    font-size: 2.5em;
+  }
+
+}
+
+@media #{$medium-small} {
+  .dropzone .how-to>li {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+  }
+  .dropzone .video-cta, .callout .video-cta {
+    margin: 17px 0;
+  }
+  .features {
+    margin-left: 1em;
+    h3 { font-size: 34px; }
+    ul { margin-bottom: 22px; }
+    li { font-size: 22px; }
+    p { max-width: 100%; }
+  }
+  .examples .button {
+    i { left: .4em }
+    padding: 1em 0 1em 3.5em;
+  }
+
+  .project-card .date, .project-card .status {
+    font-size: 10px;
+  }
+  .new-deploy {
+    width: 100%;
+    .new.project-card {
+      .icon-cloud-icon {
+        font-size: 90px;
+        margin-top: 40px;
+      }
+      .headline {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 0 24px;
+      }
+      .spacer { width: 100%; max-width: 175px; }
+    }
+  }
+
+
+}
+
+
+
+@media #{$small} {
+  header {
+    margin: 20px 0 0px;
+    .auth {
+      line-height: 40px;
+    }
+  }
+  body { padding: 0 }
+  .main { padding: 0; margin: 0; }
+  .sheet{
+    width: 100%;
+    margin: 24px 0;
+    padding: 10px;
+  }
+
+  .features {
+    margin-left: 0;
+    h3 { font-size: 26px; }
+    li { font-size: 1em; }
+  }
+  .examples .button {
+    margin-bottom: 1em;
+  }
+  .dropzone .headline {
+    margin-top: 0.7em;
+    font-size: 2em;
+  }
+  .new-deploy {
+    .new.project-card {
+      .spacer { width: 100px; }
+      .headline { font-size: 16px; }
+    }
+  }
+
+
+
+  table.pricing .icon-question {
+    display: none;
+  }
+
+}
+
+
+
