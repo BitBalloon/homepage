@@ -2,7 +2,10 @@
 	"site-title": "BitBalloon",
 	"footer-text": "Built with <a href=\"http://laktek.github.com/punch\">Punch</a>",
 	"navbar": [
-	 {"label": "Home", "href": "/"},
-	 {"label": "About", "href": "/about"}
+    {"label": "Home", "href": "/"},
+    {"label": "About", "href": "/about"},
+    {"label": "Partner", "href": "/partner"},
+    {"label": "Contact", "href": "/contact"},
+    {"label": "API", "href": "/api"}
 	]
 }
