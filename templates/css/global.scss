@@ -4,6 +4,7 @@ body {
   background: #fff;
   padding: 0 40px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
@@ -30,7 +31,17 @@ a.block { display: block; }
 a.no-link-style { color: inherit; }
 
 .visually-hidden { visibility: hidden; }
-.clearfix { @include clearfix; }
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 p, ul, ol { font-size: 18px; line-height: 1.45; }
 
@@ -57,7 +68,7 @@ ul.pagination li.current a {
   display: inline-block;
 }
 
-.row { max-width: 100em; }
+.row { max-width: 80em; }
 
 textarea {
   min-height: 95px;
@@ -230,13 +241,31 @@ header {
   padding: 0 40px;
   position: relative;
   .icon-balloon { float: left; margin-right: 10px; font-size: 52px; }
-  .logo { color: #fff; display: block; margin: 10px 0; height: 0.8em; }
-  .claim {font-size: 16px; margin: -10px 0 10px; font-weight: 400; }
+  .logo {
+    color: #fff;
+    display: block;
+    margin: 10px 0 12px;
+    height: 0.8em;
+  }
+  .claim {
+    font-size: 16px;
+    margin: -10px 0 10px;
+    font-weight: 400;
+    line-height: 1em;
+  }
   h1 { margin: 0; }
+  .main-nav {
+    margin: 1.33em 3em 0 0;
+    > li {
+      margin: 0 1.8em .4em 0;
+      font-size: 16px;
+      a { color: #163149; }
+    }
+  }
   .auth {
     position: absolute;
-    top: 0;
-    right: 0.9375em;
+    top: 0em;
+    right: 2em;
     height: 74px;
     line-height: 74px;
     font-weight: 400;

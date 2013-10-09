@@ -11,21 +11,22 @@
     </script>
     <header>
       <div class="row">
-        <div class="large-4 columns">
+        <div class="large-5 medium-6 columns">
           <h1 class="brand"><a href="/"><img class="logo" src="/img/bitballoon-logo.svg" alt="BitBalloon logo"/></a><div class="claim">Static hosting for the programmable web</div></h1>
         </div>
-        <div class="large-8 columns">
+        <div class="large-7 medium-6 columns">
           <nav>
             <ul class="inline-list inline-blocks right main-nav">
             {{#navbar}}
               <li><a href="{{{href}}}">{{label}}</a>
             {{/navbar}}
             </ul>
-
-            <div class="auth">
-              <a href="<%= reseller.multipass? ? reseller.multipass_login : '#' %>" id="login-button" class="login-button">Sign in</a>
-            </div>
           </nav>
+
+
+        </div>
+        <div class="auth">
+          <a href="<%= reseller.multipass? ? reseller.multipass_login : '#' %>" id="login-button" class="login-button">Sign in</a>
         </div>
 
       </div>

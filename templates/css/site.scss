@@ -1,11 +1,12 @@
 $tooltip-font-weight: 200;
 $tooltip-font-size: 14px;
 
-@import "../foundation/scss/foundation";
-@import "medium_grid";
-@import "prettify";
+@import "../foundation/scss/foundation.scss";
+@import "medium_grid.scss";
+@import "prettify.scss";
 @import "fonts.scss";
 @import "mixins.scss";
 @import "global.scss";
 @import "main.scss";
 @import "mobile.scss";
+

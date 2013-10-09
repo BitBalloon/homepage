@@ -9,6 +9,17 @@
 
 
 @media #{$medium} {
+  header {
+    .logo {
+      height: 1.3em;
+      margin: 0;
+    }
+    .claim {
+      margin: 0 0 .2em;
+    }
+    .main-nav {
+    }
+  }
   .dropzone .how-to>li {
     font-size: 20px;
     font-weight: 400;
@@ -34,6 +45,20 @@
 }
 
 @media #{$medium-small} {
+  header {
+    padding: 0;
+    .logo {
+      height: 63px;
+      margin: 0 0 0.25em;
+    }
+    .claim {
+      margin: -12px 0 0px;
+    }
+    .main-nav {
+      float: left !important;
+    }
+  }
+
   .dropzone .how-to>li {
     margin: 0 0 12px 0;
     font-size: 20px;
@@ -41,18 +66,26 @@
   .dropzone .video-cta, .callout .video-cta {
     margin: 17px 0;
   }
+
   .features {
     margin-left: 1em;
-    h3 { font-size: 34px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 18px; }
     ul { margin-bottom: 22px; }
     li { font-size: 22px; }
-    p { max-width: 100%; }
+    p {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  }
+  .programmable .icon-deploy-bot {
+    font-size: 11em;
+    top: .07em;
   }
   .examples .button {
     i { left: .4em }
     padding: 1em 0 1em 3.5em;
   }
-
   .project-card .date, .project-card .status {
     font-size: 10px;
   }
@@ -79,9 +112,14 @@
 
 @media #{$small} {
   header {
-    margin: 20px 0 0px;
+    margin: 0 0 .5em;
+    .logo {
+      height: 1.8em;
+      margin: .4em 0 .3em;
+    }
     .auth {
       line-height: 40px;
+      right: 1.5em;
     }
   }
   body { padding: 0 }
