@@ -273,7 +273,10 @@
       &.icon-form { font-size: 1.5em; top: -.1em; }
       &.icon-rocket { font-size: 1.5em;  }
       &.icon-unlocked { font-size: 1.6em; }
-      &.icon-robot { font-size: 1.7em; top: -.2em; left: -.05em; }
+      &.icon-speedometer {
+        font-size: 1em;
+        top: .1em;
+      }
     }
   }
   p {
@@ -297,6 +300,8 @@
   .icon-deploy-bot{
     font-size: 11em;
     top: -.05em;
+    margin-right: .2em;
+    left: .2em;
   }
   .icon-brand {
     font-size: 9em;
@@ -1105,78 +1110,46 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
 }
 
 /*** Pricing ****************************************/
-
-table.pricing {
-  width: 100%;
-  thead th {
-    font-size: 16px;
-  }
-  tr td:first-child {
-    font-weight: bold;
-    font-size: 14px;
-    width: 50%;
-    position: relative;
-  }
-  tr td {
-    font-size: 18px;
-  }
-  thead {
-    background: rgb(237, 237, 255);
-  }
-  .icon-question {
-    font-size: 19px;
-    position: absolute;
-    left: -32px;
-    top: 13px;
-    color: #005CD1;
-  }
-  .icon-checkmark {
-    font-size: 24px;
-    color: #118611;
-  }
-  .icon-close {
-    font-size: 29px;
-    color: #B95757;
-  }
-  .hover-tip {
-    display: none;
-    position: absolute;
-    background: whitesmoke;
-    width: 194%;
-    border: 1px solid #5A81C5;
-    padding: 8px 10px;
-    z-index: 1;
-    border-radius: 4px;
-    box-shadow: 0 0 0px 2px #739AFF;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.4em;
-    left: 4%;
-    bottom: 59px;
-  }
-  tr:hover {
-    background: #DDFFDD;
-    .hover-tip {
-      display: block;
-    }
-  }
-  .hover-tip:after {
-    content: " ";
-    position: absolute;
-    width: 12;
-    height: 12;
-    bottom: -13px;
-    left: 30px;
-    border-left: 12px solid rgba(0, 0, 0, 0);
-    border-right: 12px solid rgba(0, 0, 0, 0);
-    border-top: 12px solid #739AFF;
-    z-index: 0;
-  }
+.pricing {
+	background: #fff;
+	max-width: 70em;
+	margin: 0 auto;
+}
+.tiers {
+	li {
+		padding-top: 2em;
+		&:hover {
+			background: rgb(247, 249, 253);
+		}
+	}
+	text-align: center;
+	a { text-decoration: none; }
+	.image-container {
+		height: 12em;
+	}
+	.one,.two {
+		border-right: 1px solid #ECF6FC;
+	}
+	.one img {
+		width: 4em;
+		margin-top: 3em
+	}
+	.two img {
+		width: 5.2em;
+		margin-top: 1.5em;
+	}
+	.three img {
+		width: 7.6em;
+	}
+	h2 {
+		margin-bottom: .23em;
+	}
+	p {
+		margin: 0 auto 2em;
+		max-width: 15em;
+	}
 }
 
-.icon-checkmark, .icon-x {
-  width: 30px;
-}
 
 /*** Partner *********************************************/
 

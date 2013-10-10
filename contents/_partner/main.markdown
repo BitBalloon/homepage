@@ -1,6 +1,6 @@
 ## Partner with BitBalloon
 
-<p class="lead">Having your own static hosting service can do wonders for your business. There are several ways you can partner with us, join the mail to keep up to date about opportunities!
+<p class="lead">Power your business with BitBalloon's cloud hosting infrastructure. There are several ways to partner with us. Join the mail to keep up to date about opportunities!
 
 <div class="mailchimp-form large-6">
   <!-- Begin MailChimp Signup Form -->
@@ -31,7 +31,7 @@
 
 ### Embed Code
 
-The simplest way to partner is to add a custom embed code which will create BitBalloon deployment dropzone:
+Add custom embed code to create a BitBalloon deployment dropzone for your audience:
 
 <div class="row">
 <div class="columns large-12">
@@ -41,7 +41,7 @@ The simplest way to partner is to add a custom embed code which will create BitB
 
 </pre>
 
-<p>Earn recurring revenue when people updrade to premium. <a href="/contact">Get an affiliate code.</a></p>
+<p>Earn recurring revenue when people upgrade to premium. <a href="/contact">Get an affiliate code.</a></p>
 </div>
 </div>
 
@@ -50,11 +50,11 @@ The simplest way to partner is to add a custom embed code which will create BitB
 
 ### Custom Branded
 
-Create your own custom branded homepage, your logo in the admin tools and API access under your own domain. Billing is handled through BitBalloon. Earn recurring revenue when clients go premium.
+Get your own custom branded homepage, with your logo in the admin tools and API access under your own domain. Billing is handled through BitBalloon. Earn recurring revenue when clients go premium.
 
 ### Infrastructure Integration
 
-Fully white-label, API-driven integration where you handle billing relationship with users.
+Fully white-label, API-driven integration where you handle the billing relationship with end users.
 
 ### Feedback
 Questions, comments, just wanna say hi?

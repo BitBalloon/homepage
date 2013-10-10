@@ -68,7 +68,7 @@ ul.pagination li.current a {
   display: inline-block;
 }
 
-.row { max-width: 80em; }
+.row { max-width: 72em; }
 
 textarea {
   min-height: 95px;
@@ -259,7 +259,12 @@ header {
     > li {
       margin: 0 1.8em .4em 0;
       font-size: 16px;
-      a { color: #163149; }
+      a {
+        color: rgb(132, 138, 143);
+        &:hover {
+          color: rgb(81, 83, 85);
+        }
+      }
     }
   }
   .auth {

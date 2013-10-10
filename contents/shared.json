@@ -6,14 +6,14 @@
     {"label": "About", "href": "/about"},
     {"label": "Pricing", "href": "/pricing"},
     {"label": "Partner", "href": "/partner"},
-    {"label": "Api", "href": "/api"}
+    {"label": "API", "href": "/api"}
 	],
     "footer-navbar": [
     {"label": "Home", "href": "/"},
     {"label": "About", "href": "/about"},
     {"label": "Pricing", "href": "/pricing"},
     {"label": "Partner", "href": "/partner"},
-    {"label": "Api", "href": "/api"},
+    {"label": "API", "href": "/api"},
     {"label": "Contact", "href": "/contact"}
     ]
 }
