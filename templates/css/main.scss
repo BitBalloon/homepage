@@ -276,6 +276,7 @@
       &.icon-speedometer {
         font-size: 1em;
         top: .1em;
+        left: -.1em;
       }
     }
   }
@@ -1116,8 +1117,9 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
 	margin: 0 auto;
 }
 .tiers {
+  margin-bottom: 3em;
 	li {
-		padding-top: 2em;
+		padding: 2em 0;
 		&:hover {
 			background: rgb(247, 249, 253);
 		}
@@ -1148,6 +1150,9 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
 		margin: 0 auto 2em;
 		max-width: 15em;
 	}
+  .button {
+    width: 10em;
+  }
 }
 
 
