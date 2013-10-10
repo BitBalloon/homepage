@@ -696,8 +696,8 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   ul {
     list-style: none;
     position: absolute;
-    top: 60px;
-    left: 23px;
+    top: 35px;
+    left: -15px;
     z-index: 1;
     background: #191919;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
@@ -1228,3 +1228,7 @@ body.folder-support span.no-folder-support { display: none; }
 
 header .brand:before { content: "\e015"; float: left; font-size: 52px; margin-right: 10px; font-family: icomoon; speak: none; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased;
 }
+
+.login-dropdown { display: none; }
+.logged-in .login-button { display: none; }
+.logged-in .login-dropdown { display: block; }
