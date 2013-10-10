@@ -15,26 +15,76 @@
       </a>
     </li>
     <li class="two">
-      <a href="/">
+      <a href="/upgrade">
         <div class="image-container">
           <img src="img/power-balloon.svg">
         </div>
         <h2 class="text-center">Pro</h2>
         <p class="description">Hosting on your own domain starts at $5/month</p>
-        <a href="/" class="button">Upgrade</a>
+        <a href="/upgrade" class="button">Upgrade</a>
       </a>
     </li>
     <li class="three">
-      <a href="/partner">
+      <a href="#request-a-demo" data-reveal-id="request-a-demo" >
         <div class="image-container">
           <img src="img/business-balloons.svg">
         </div>
         <h2 class="text-center">Business</h2>
         <p class="description">Your own hosting and deployment infrastructure.</p>
-        <a href="/partner" class="button">Request a Demo</a>
+        <a href="#request-a-demo" data-reveal-id="request-a-demo" class="button">Request a Demo</a>
       </a>
     </li>
   </ul>
+
+  <div id="request-a-demo" class="reveal-modal small">
+    <div class="row">
+
+      <div class="large-12 columns">
+        <h2>Request a Demo</h2>
+      </div>
+
+      <form name="request-a-demo">
+        <div class="large-6 columns">
+          <p>
+            <label>Name</label>
+            <input name="name" type="text" required>
+          </p>
+        </div>
+        <div class="large-6 columns">
+          <p>
+            <label>Email</label>
+            <input name="email" type="email" required>
+          </p>
+        </div>
+        <div class="large-6 columns">
+          <p>
+            <label>Company</label>
+            <input name="company" type="text" required>
+          </p>
+        </div>
+
+        <div class="large-6 columns">
+          <p>
+            <label>Phone</label>
+            <input name="phone" type="tel" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' >
+          </p>
+        </div>
+
+        <div class="large-12 columns">
+          <p>
+            <label>What's your interest in BitBalloon?</label>
+            <textarea name="message" rows="10" required></textarea>
+          </p>
+        </div>
+        <div class="large-6 large-centered columns">
+          <button class="radius button expand" type="submit">Send</button>
+        </div>
+    </form>
+    <a class="close-reveal-modal">&#215;</a>
+
+    </div>
+
+  </div>
 
 
 {{ >footer }}
