@@ -9,17 +9,6 @@
 
 
 @media #{$medium} {
-  header {
-    .logo {
-      height: 1.3em;
-      margin: 0;
-    }
-    .claim {
-      margin: 0 0 .2em;
-    }
-    .main-nav {
-    }
-  }
   .dropzone .how-to>li {
     font-size: 20px;
     font-weight: 400;
@@ -45,20 +34,7 @@
 }
 
 @media #{$medium-small} {
-  header {
-    padding: 0;
-    .logo {
-      height: 63px;
-      margin: 0 0 0.25em;
-    }
-    .claim {
-      margin: -12px 0 0px;
-    }
-    .main-nav {
-      float: left !important;
-    }
-  }
-
+  header nav.show-for-medium-up { display: none !important; }
   .dropzone .how-to>li {
     margin: 0 0 12px 0;
     font-size: 20px;
@@ -111,18 +87,8 @@
 
 
 @media #{$small} {
-  header {
-    margin: 0 0 .5em;
-    .logo {
-      height: 1.8em;
-      margin: .4em 0 .3em;
-    }
-    .auth {
-      line-height: 40px;
-      right: 1.5em;
-    }
-  }
   body { padding: 0 }
+  header .logo { height: 1em; }
   .main { padding: 0; margin: 0; }
   .sheet{
     width: 100%;
