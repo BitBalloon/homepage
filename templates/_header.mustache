@@ -20,11 +20,20 @@
             {{#navbar}}
               <li><a href="{{{href}}}">{{label}}</a>
             {{/navbar}}
+              <li>
+                <div class="auth">
+                  <a href="#" id="login-button" class="login-button">Sign in</a>
+                  <div class="dropdown login-dropdown">
+                    <a href="#" id="logout-button" class="dropdown-trigger user-name">Logged in</a>
+                    <ul>
+                      <li><a href="/sites">Your sites</a></li>
+                      <li><a href="#" class="logout-button">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
-          <div class="auth">
-            <a href="<%= reseller.multipass? ? reseller.multipass_login : '#' %>" id="login-button" class="login-button">Sign in</a>
-          </div>
         </div>
       </div>
     </header>

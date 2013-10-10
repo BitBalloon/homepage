@@ -63,6 +63,10 @@ ul.pagination li.current a {
   color: inherit;
 }
 
+.inline-list {
+  overflow: visible;
+  @include clearfix;
+}
 .inline-list.inline-blocks li {
   float: none;
   display: inline-block;
@@ -255,11 +259,11 @@ header {
   }
   h1 { margin: 0; }
   .main-nav {
-    margin: 1.33em 4em 0 0;
+    margin: 1.33em 0 0 0;
     > li {
       margin: 0 1.8em .4em 0;
       font-size: 16px;
-      a {
+      > a {
         color: rgb(132, 138, 143);
         &:hover {
           color: rgb(81, 83, 85);
@@ -268,12 +272,7 @@ header {
     }
   }
   .auth {
-    position: absolute;
-    top: 0em;
-    right: 2em;
-    height: 74px;
-    line-height: 74px;
-    font-weight: 400;
+    position: relative;
     opacity: 0.9;
     &:hover { opacity: 1; }
   }
@@ -282,7 +281,7 @@ header {
     display: inline-block;
     width: 0.6em;
     height: 0.6em;
-    background: url(/images/triangle-down.svg) no-repeat;
+    background: url(/img/triangle-down.svg) no-repeat;
     background-size: contain;
     margin-left: 5px;
     position: relative;
