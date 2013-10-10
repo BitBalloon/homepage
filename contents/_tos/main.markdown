@@ -1,5 +1,5 @@
 <div id="privacy-and-tos" class="section-container auto" data-section data-options="deep_linking: true">
-<section>
+<section class="active">
   <p class="title" data-section-title><a href="#tos">Terms of Service</a></p>
   <div class="content" data-section-content data-slug="tos">
     <h2>Terms of Service Agreement</h2>
