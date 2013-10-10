@@ -1,8 +1,6 @@
 ## BitBalloon API
 
-<p class="lead">Integrate BitBalloon infrastructure with other web servcies via the our REST API. It's fully versioned & ready to use, but evolving very fast!
-
-Enter your email to keep up to date:</p>
+<p class="lead">Integrate BitBalloon infrastructure with other web servcies via the our REST API. It's fully versioned & ready to use, but evolving very fast! Enter your email to keep up to date:</p>
 
 <div class="mailchimp-form large-6">
   <!-- Begin MailChimp Signup Form -->

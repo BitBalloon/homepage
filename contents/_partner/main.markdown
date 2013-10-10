@@ -1,6 +1,6 @@
 ## Partner with BitBalloon
 
-<p class="lead">Power your business with BitBalloon's cloud hosting infrastructure. There are several ways to partner with us. Join the mail to keep up to date about opportunities!
+<p class="lead">Power your business with BitBalloon's cloud hosting infrastructure. There are several ways to partner with us. Join the mail to keep up to date about opportunities!</p>
 
 <div class="mailchimp-form large-6">
   <!-- Begin MailChimp Signup Form -->
@@ -27,26 +27,22 @@
   </div>
 </div>
 
-<hr/>
+* * *
 
 ### Embed Code
 
 Add custom embed code to create a BitBalloon deployment dropzone for your audience:
 
-<div class="row">
-<div class="columns large-12">
+
 <pre class="prettyprint">
 
 &lt;a class="bb-dropzone-widget" href="https://www.bitballoon.com?af=CHANGEME"&gt;  BitBalloon&lt;/a&gt; &lt;script&gt; (function(w,d) { if(!w.bb_embed) { var e = d.createElement("script"); e.async=1; e.src = "https://www.bitballoon.com/embed/script.js"; d.body.appendChild(e); } })(window, document);&lt;/script&gt;
 
 </pre>
 
-<p>Earn recurring revenue when people upgrade to premium. <a href="/contact">Get an affiliate code.</a></p>
-</div>
-</div>
+Earn recurring revenue when people upgrade to premium. [Get an affiliate code](/contact).
 
-
-<hr/>
+* * *
 
 ### Custom Branded
 

@@ -14,7 +14,6 @@
     ],
     "/js/all.js": [
       "/foundation/js/foundation/foundation.js",
-      "/foundation/js/foundation/foundation.reveal.js",
       "/js/app.coffee"
     ]
   },
