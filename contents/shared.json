@@ -11,6 +11,7 @@
     {"label": "Pricing", "href": "/pricing"},
     {"label": "Partner", "href": "/partner"},
     {"label": "API", "href": "/api"},
-    {"label": "Contact", "href": "/contact"}
+    {"label": "Contact", "href": "/contact"},
+    {"label": "Privacy & Terms", "href": "/tos"}
     ]
 }

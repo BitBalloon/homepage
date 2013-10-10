@@ -13,7 +13,9 @@
       "/css/site.scss"
     ],
     "/js/all.js": [
-      "/foundation/js/foundation/foundation.js",
+      "/foundation/js/foundation.js",
+      "/foundation/js/foundation.reveal.js",
+      "/foundation/js/foundation.section.js",
       "/js/app.coffee"
     ]
   },

@@ -2,11 +2,7 @@
 
 Questions? Comments? Drop us a note!
 
-<form accept-charset="UTF-8" action="/contact" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5TCX3y4743eaFi8q9cQDeqJW6QmqQrIhFWCzZwUwkyc=" /></div>
-  <p class="bot-field">
-    <label>Don't fill out this field</label>
-    <input name="url" />
-  </p>
+<form accept-charset="UTF-8" action="/contact" method="post">
   <p>
     <label>Your Name</label>
     <input name="name" type="text" required>
