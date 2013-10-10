@@ -40,13 +40,13 @@ Add custom embed code to create a BitBalloon deployment dropzone for your audien
 
 </pre>
 
-Earn recurring revenue when people upgrade to premium. [Get an affiliate code](/contact).
+Earn recurring revenue when people upgrade to Pro. [Get an affiliate code](/contact).
 
 * * *
 
 ### Custom Branded
 
-Get your own custom branded homepage, with your logo in the admin tools and API access under your own domain. Billing is handled through BitBalloon. Earn recurring revenue when clients go premium.
+Get your own custom branded homepage, with your logo in the admin tools and API access under your own domain. Billing is handled through BitBalloon. Earn recurring revenue when clients go Pro.
 
 ### Infrastructure Integration
 
