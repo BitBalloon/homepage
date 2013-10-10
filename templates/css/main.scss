@@ -1165,11 +1165,16 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
     width: 480px;
   }
   .pro-pricing {
-    border: 2px solid #2281cf;
+    border: 2px solid #1E70B4;
     padding: 12px 18px;
-    color: #2281cf;
+    color: #1E70B4;
     margin-bottom: 1.7em;
     font-weight: 500;
+  }
+  .save {
+    color: #3EAF46;
+    font-weight: 500;
+    margin-bottom: 1.7em;
   }
   .dashed-box {
     margin-bottom: 3em;
