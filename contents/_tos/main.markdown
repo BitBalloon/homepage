@@ -65,7 +65,7 @@
     <li>The network resources of the BitBalloon may not be used to impersonate another person or misrepresent authorization to act on behalf of others or BitBalloon</li>
     <li>All messages transmitted via BitBalloon should correctly identify the sender; Users may not alter the attribution of origin in electronic mail messages or posting.</li>
     <li>All users shall not attempt to undermine the security or integrity of computing systems or networks of BitBalloon, its Partners, or those accessed through or with their product, and must not attempt to gain unauthorized access.</li>
-    <li>All user-specific information provided by user in connection with Services shall be governed by the BitBalloon Privacy Policy (located at http://www.BitBalloon.com/privacy). User understands and accepts all terms and conditions contained within the BitBalloon Privacy Policy.</li>
+    <li>All user-specific information provided by user in connection with Services shall be governed by the BitBalloon Privacy Policy. User understands and accepts all terms and conditions contained within the BitBalloon Privacy Policy.</li>
     <li>BitBalloon reserves the right to terminate any account that does not include a valid email address on file. This email address must be stored in the profile for the administrative account within User's website on the BitBalloon system.</li>
     </ol></li>
     <li>
