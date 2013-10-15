@@ -51,4 +51,4 @@ You can inject code snippets into the footer of your all your sites pages by usi
 
 ### Versions
 
-Every time a site is redeployed, a new versions is created. You can access your deployment history in the dashboard and restore any previous deploy to represent your live site.
+Every time a site is redeployed, a new version is created. You can access your deployment history in the dashboard and restore any previous deploy to represent your live site.
