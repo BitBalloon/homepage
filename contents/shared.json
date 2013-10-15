@@ -3,7 +3,7 @@
 	"footer-text": "Built with <a href=\"http://laktek.github.com/punch\">Punch</a>",
 	"navbar": [
     {"label": "Pricing", "href": "/pricing"},
-    {"label": "Partner", "href": "/partner"},
+    {"label": "Partner", "href": "/docs/partner"},
     {"label": "Documentation", "href": "/docs"}
 	],
     "footer-navbar": [
