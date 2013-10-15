@@ -28,7 +28,7 @@ https://www.bitballoon.com/sites/cowboy-sysxtem-73843
 
 ### Form Handling
 
-During a deployment, BitBalloon finds any forms in your HTML which don't already have an action set and automatically makes them work.
+During a deployment, BitBalloon finds any forms in your HTML which don't already have an action attribute and automatically makes them work.
 
 You can use the site's dashboard to export form data and setup email notifications. Form events and data can also be accessed via the <a href="/api#forms">API</a>. BitBalloon's integration with API marketplaces like <a href="/docs/zapier">Zapier</a> makes it simple to hook form submissions into hundreds of useful 3rd party services without having to do any programming!
 
