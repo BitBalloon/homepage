@@ -8,7 +8,7 @@ Either way, the deployment is an automated process where BitBalloon analyzes you
 When you first deploy a site, a URL gets generated for it, similar in format to:<br/> http://cowboy-system-73843.bitballoon.com
 
 <div class="panel">
-This overview covers the features of BitBalloon which are exposed in the UI. Read up on the <a href="/api#sites">API</a> to learn about additional capabilities of the platform.
+This overview covers the features of BitBalloon which are exposed in the UI. Read up on the <a href="/docs/api#sites">API</a> to learn about additional capabilities of the platform.
 </div>
 
 ### Site Management
@@ -30,7 +30,7 @@ https://www.bitballoon.com/sites/cowboy-sysxtem-73843
 
 During a deployment, BitBalloon finds any forms in your HTML which don't already have an action attribute and automatically makes them work.
 
-You can use the site's dashboard to export form data and setup email notifications. Form events and data can also be accessed via the <a href="/api#forms">API</a>. BitBalloon's integration with API marketplaces like <a href="/docs/zapier">Zapier</a> makes it simple to hook form submissions into hundreds of useful 3rd party services without having to do any programming!
+You can use the site's dashboard to export form data and setup email notifications. Form events and data can also be accessed via the <a href="/docs/api#forms">API</a>. BitBalloon's integration with API marketplaces like <a href="/docs/zapier">Zapier</a> makes it simple to hook form submissions into hundreds of useful 3rd party services without having to do any programming!
 
 For best results, set name attributes on the form and it's inputs, like so:
 

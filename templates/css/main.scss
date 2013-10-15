@@ -1186,7 +1186,22 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   list-style: none;
   padding-top: 1em;
   li {
-    line-height: 1.8em;
+    line-height: 2.8em;
+    padding-left: 1em;
+    width: 100%;
+    display: block;
+    a {
+      text-decoration: none;
+      display: block;
+    }
+    &:hover {
+      background: rgba(104, 155, 211, 0.11);
+    }
+    &.active {
+      font-weight: 600;
+      background: #689BD3;
+      a { color: #FFF; }
+    }
   }
 }
 

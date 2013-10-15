@@ -9,7 +9,6 @@
         <li><a href="/docs/zapier">Zapier</a></li>
         <li><a href="/docs/api">API Reference <i class="icon-external-link-icon"></i></a></li>
         <li><a href="/docs/ruby">Ruby Client</a></li>
-        <li><a href="/docs/partner">Partner</a></li>
       </ul>
     </div>
 
@@ -22,3 +21,14 @@
 
 {{> footer }}
 
+<script type="text/javascript">
+var str=location.href.toLowerCase();
+
+$('.docs-nav li a').each(function() {
+  if (str.indexOf(this.href.toLowerCase()) > -1) {
+    $("li.active").removeClass("active");
+    $(this).parent().addClass("active");
+  }
+});
+
+</script>

@@ -68,8 +68,11 @@ pre {
 
 p, ul, ol { font-size: 18px; line-height: 1.45; }
 
-table.full-width {
+
+.full-width {
   width: 100%;
+}
+table.full-width {
   border-collapse:collapse;
   table-layout: fixed;
 }
