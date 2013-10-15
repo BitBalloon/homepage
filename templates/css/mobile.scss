@@ -34,7 +34,7 @@
 }
 
 @media #{$medium-small} {
-  header nav.show-for-medium-up { display: none !important; }
+  header nav .navlink { display: none !important; }
   .dropzone .how-to>li {
     margin: 0 0 12px 0;
     font-size: 20px;
@@ -87,6 +87,7 @@
 
 
 @media #{$small} {
+  header nav .navlink { display: none !important; }
   body { padding: 0 }
   header .logo { height: 1em; }
   .main { padding: 0; margin: 0; }

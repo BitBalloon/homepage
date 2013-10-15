@@ -689,7 +689,7 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   ul {
     list-style: none;
     position: absolute;
-    top: 35px;
+    top: 25px;
     left: -15px;
     z-index: 1;
     background: #191919;
@@ -1288,18 +1288,6 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
 
 }
 
-
-/* Feedback Iframe */
-body.feedback-frame {
-  background: rgba(255,255,255,0.9);
-  .callout {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    margin: -250px 0 0;
-  }
-}
 
 body .folder-support { display: none; }
 body.folder-support span.folder-support { display: inline; }
