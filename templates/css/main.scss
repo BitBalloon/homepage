@@ -1180,7 +1180,39 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   }
 }
 
-/*** Partner *********************************************/
+/*** DOCS *********************************************/
+
+.docs-nav {
+  list-style: none;
+  padding-top: 1em;
+  li {
+    line-height: 1.8em;
+  }
+}
+
+.docs-main {
+  .panel {
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 1.21em;
+  }
+  .no-link-style {
+    display: block;
+    &:hover {
+      .big-docs-icon {
+        color: gray;
+      }
+    }
+  }
+}
+.big-docs-icon {
+  font-size: 5em;
+  color: #B9B9B9;
+  transition: color .4s;
+}
+
+
+/*** API *********************************************/
 
 .api {
   width: 100%;
@@ -1251,29 +1283,10 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
         display: block;
       }
     }
-    pre {
-      font-size: .92em;
-      position: relative;
-      margin: 0;
-      white-space: pre;
-      word-wrap: normal;
-      code {
-        border-radius: 3px;
-        margin-bottom: 1.5em;
-        overflow-x: scroll;
-        display: block;
-        color: white;
-        font-size: 1em;
-        font-weight: 100;
-        line-height: 1.5;
-        background: #273857;
-        padding: .7em 1em .5em;
-      }
-    }
+
   }
 
 }
-
 
 
 /* Feedback Iframe */

@@ -28,7 +28,30 @@ a:hover { text-decoration: underline; color: #3892E3; }
 
 a.block { display: block; }
 
-a.no-link-style { color: inherit; }
+a.no-link-style {
+  color: inherit;
+  text-decoration: none;
+}
+
+pre {
+  font-size: .92em;
+  position: relative;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  code {
+    border-radius: 3px;
+    margin-bottom: 1.5em;
+    overflow-x: scroll;
+    display: block;
+    color: white;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.5;
+    background: #273857;
+    padding: .7em 1em .5em;
+  }
+}
 
 .visually-hidden { visibility: hidden; }
 
