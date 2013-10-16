@@ -12,11 +12,11 @@ Below you'll find guides and reference documentation about the BitBalloon platfo
 </div>
 
 <div class="large-6 columns text-center">
-  <a href="/docs/partner" class="no-link-style">
+  <a href="/partner" class="no-link-style">
     <i class="icon-tools big-docs-icon"></i>
   </a>
   <h4>In your App</h4>
-  <p>Integrate easy web publishing into your own applications. <a href="/docs/partner">Learn more &raquo;</a></p>
+  <p>Integrate easy web publishing into your own applications. <a href="/partner">Learn more &raquo;</a></p>
 </div>
 
 <hr/>
