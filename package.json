@@ -1,0 +1,10 @@
+{
+  "name": "bitballoon-homepage",
+  "version": "0.0.1",
+  "author": "BitBalloon <team@bitballoon.com>",
+  "description": "The homepage of BitBalloon",
+  "dependencies": {
+    "punch": "0.5.38",
+    "punch-sass-compiler": "0.0.3"
+  }
+}
