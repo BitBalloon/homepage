@@ -8,6 +8,9 @@
 // @description
 //   With a default "small-#" grid, a 640-1024px "medium-#" grid, and a 1024+ "large-#" grid, we've got you covered for any layout you can think of.
 //
+body{
+  background: red !important;
+}
 
 //
 // Grid Variables
@@ -159,6 +162,11 @@ $total-columns: 12 !default;
 
   @media only screen and (min-width: $small-screen) {
 
+
+    .hide-for-small {
+      display: inherit !important;
+    }
+
     @for $i from 1 through $total-columns {
       .medium#{-$i} { @include grid-column($columns:$i,$collapse:null,$float:false); }
     }
@@ -185,6 +193,7 @@ $total-columns: 12 !default;
   }
 
   @media only screen and (min-width: $medium-screen) {
+
 
     @for $i from 1 through $total-columns {
       .large#{-$i} { @include grid-column($columns:$i,$collapse:null,$float:false); }

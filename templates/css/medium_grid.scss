@@ -130,6 +130,11 @@
     margin-right: auto;
     float: none !important; } }
 @media only screen and (min-width: 640px) {
+  .hide-for-small {
+    display: inherit !important;
+  }
+
+
   .medium-1 {
     width: 8.33333%; }
 
