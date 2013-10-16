@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - "0.11"
+- '0.11'
 env:
-  secure: "PHpatxKhMGzcSfB+yiel85H3J4WEpaiBUtxOJU/aoE2STeBIRtNCejdULmnnA69giWqmXL6uOt5Kf2I4LR7LTOtZtQb8ZG/3qVm0NojX7alOr7cfcbuCQEc1iHWSYw9oEoleYAz7x+7lXjbbQc9ag33IBbcskZ+4iGKO+JUkvtQ="
-  secure: "I3VxKRnJH8DoBUwvtJBYrxXk0Gr5RdKaOS+0un3/7w7WTKBwbbZYUxMhwHvVY1P/MsS6qVdDwDgRu5BnxVLF9R8DKBA61F2X1GdyxRqdFvux3G8EH7iwkeSZjw5dKc/cGPmBQkDDP8TJU9kASwRTsoSilXAnFyN3Q4BUZhAb6Hw="
+  global:
+  - secure: QfCYJKFDlbdThkglYQveCG6S/8L77fsBy8k9lh89WDNm4C6pGfyczi/jtULZZXp0FS4uVs/4bI8xHLZL5Ne4vP380Mjl9RDefpE7Qhplt+ot4MKX3aHcKWpKNMMnxv85qRJ28vUyQbd+R+fcNyjwOtuHOQ6EErgjpL3VjUtxQ2I=
+  - secure: Am2989lFfvpv/V8NRTCoiJZf6had0JZOVdkK4++pDD31w6ftSTqWIzWkQu9vSd6Vg3+QsnOisaH0jOA5GIddFrg4w+rS9BiMJkAXaqSV8sILalRAH+S62/3yVRTSlPsRDBsna2zopZQW6ZDeKC/WImAcY8At+ndR2WP9giyEbHA=
 before_install:
-  - travis_retry gem install bitballoon
+- travis_retry gem install bitballoon
 script: node_modules/punch/bin/punch g
 after_success: bitballoon deploy output --access-token=$BB_ACCESS_TOKEN --site-id=$BB_SITE_ID
