@@ -23,8 +23,8 @@
  }
 
 .cloud-icon, .cloud-working-icon {
-  font-size: 150px;
-  margin: 55px auto 0;
+  font-size: 120px;
+  margin: 35px auto 0px;
   position: relative;
   display: block;
 }
@@ -38,9 +38,9 @@
 
 
 .headline {
-  margin-top: 0.7em;
+  margin-top: 1em;
   margin-bottom: 0.4em;
-  font-size: 2.8em;
+  font-size: 1.8em;
   color: #fff;
   font-weight: 100;
   letter-spacing: 2px;
@@ -193,6 +193,18 @@
   display: none;
 }
 
+.home-hero {
+  h2 {
+    margin: 3em 0 1em;
+  }
+  .lead {
+    font-size: 1.5em;
+    padding: 0 2em;
+  }
+}
+
+
+
 .gear-icon { height: 1em; margin-left: 3px; }
 
 .social-icons {
@@ -255,33 +267,73 @@
 .steps img { width: 1em; margin-right: 0.3em; vertical-align: top; }
 
 
+
+
+@-webkit-keyframes ripple {
+  from {
+    -webkit-transform: scale(0);
+    opacity: .75;
+  }
+  to {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  border: 20px solid rgb(215, 226, 231);
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: -142px;
+  left: -142px;
+  &.active {
+    -webkit-animation: ripple 3s linear 1s;
+  }
+}
+
 .features {
   margin-top: 2.5em;
-  h2 {
-    margin-bottom: 1em;
+  h1 {
+    margin-bottom: 2em;
   }
-  h3 {
-    margin-bottom: .3em;
+  .halo {
+    width: 15em;
+    height: 15em;
+    border: 12px solid rgb(179, 226, 248);
+    border-radius: 100%;
     position: relative;
-    padding-left: 1.8em;
-    i {
-      left: 0;
-      top: -.1em;
-      font-size: 1.4em;
-      position: absolute;
-      &.icon-cloud-upload { font-size: 1.15em; top: 0em; }
-      &.icon-form { font-size: 1.5em; top: -.1em; }
-      &.icon-rocket { font-size: 1.5em;  }
-      &.icon-unlocked { font-size: 1.6em; }
-      &.icon-speedometer {
-        font-size: 1em;
-        top: .1em;
-        left: -.1em;
-      }
+    background: #fff;
+    img {
+     width: 8em;
+     position: absolute;
+     top: 1.2em;
+     left: 2.5em;
+    }
+    .code {
+     top: 3.1em;
+     left: 2.8em;
+    }
+    .server {
+      top: 3em;
+      left: 2.8em;
     }
   }
+
+
+  .feature {
+    margin-bottom: 6.5em;
+    .button {
+    }
+  }
+  h3 {
+    margin-top: 1.5em;
+  }
   p {
-    max-width: 320px;
+    font-size: 20px;
   }
 }
 
@@ -418,6 +470,8 @@
   position: relative;
   font-size: 87px;
   color: #919191;
+  display: block;
+  text-align: center;
 }
 
 .dropzone.drop-target .cloud-icon,
