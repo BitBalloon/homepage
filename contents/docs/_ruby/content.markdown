@@ -18,7 +18,8 @@ or put it in a Gemfile and run `bundle install`
 Authenticating
 ==============
 
-You'll need an application client id and a client secret before you can access the BitBalloon API. You can get them at https://www.bitballoon.com/applications
+You'll need an application client id and a client secret before you can access the BitBalloon API.
+Our API is launching publicly soon! Stay tuned for access to API keys.
 
 Once you have your credentials you can instantiate a BitBalloon client.
 
