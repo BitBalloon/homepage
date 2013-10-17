@@ -12,3 +12,6 @@ after_success: bitballoon deploy output --access-token=$BB_ACCESS_TOKEN --site-i
 notifications:
   hipchat:
     - secure: "fdFyd9tkC7RnAAnRvWfwikZGkHLq8EhZ8Jy7FAy9QIANUNyzhdEIf6yd3We4FfgjQC2ctYzoi4aw+PnmnRnF1oZdMlKMOlbtr+3/9qZNA3pkwN1GUd/r+dmaTEJI9K2YfBMyaRWKu9rOE6VfUrBNIn02M8v+4xQtt4WfJpgIvXU="
+branches:
+  only:
+    - master
