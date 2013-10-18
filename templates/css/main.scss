@@ -23,8 +23,8 @@
  }
 
 .cloud-icon, .cloud-working-icon {
-  font-size: 150px;
-  margin: 55px auto 0;
+  font-size: 120px;
+  margin: 35px auto 0px;
   position: relative;
   display: block;
 }
@@ -38,9 +38,9 @@
 
 
 .headline {
-  margin-top: 0.7em;
+  margin-top: 1em;
   margin-bottom: 0.4em;
-  font-size: 2.8em;
+  font-size: 1.8em;
   color: #fff;
   font-weight: 100;
   letter-spacing: 2px;
@@ -193,6 +193,18 @@
   display: none;
 }
 
+.home-hero {
+  h2 {
+    margin: 3em 0 1em;
+  }
+  .lead {
+    font-size: 1.5em;
+    padding: 0 2em;
+  }
+}
+
+
+
 .gear-icon { height: 1em; margin-left: 3px; }
 
 .social-icons {
@@ -255,86 +267,78 @@
 .steps img { width: 1em; margin-right: 0.3em; vertical-align: top; }
 
 
+
+
+@-webkit-keyframes ripple {
+  from {
+    -webkit-transform: scale(0);
+    opacity: .75;
+  }
+  to {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  border: 20px solid rgb(215, 226, 231);
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: -142px;
+  left: -142px;
+  &.active {
+    -webkit-animation: ripple 3s linear 1s;
+  }
+}
+
 .features {
   margin-top: 2.5em;
-  h2 {
-    margin-bottom: 1em;
+  h1 {
+    margin-bottom: 1.4em;
+  }
+  .halo {
+    width: 15em;
+    height: 15em;
+    border: 12px solid rgb(179, 226, 248);
+    border-radius: 100%;
+    position: relative;
+    background: #fff;
+    img {
+     width: 8em;
+     position: absolute;
+     top: 1.2em;
+     left: 2.5em;
+    }
+    .code {
+     top: 3.1em;
+     left: 2.8em;
+    }
+    .server {
+      top: 3em;
+      left: 2.8em;
+    }
+  }
+  .feature {
+    margin-bottom: 6.5em;
+    &.one, &.two {
+      h3 { margin-top: 2em;}
+    }
   }
   h3 {
-    margin-bottom: .3em;
-    position: relative;
-    padding-left: 1.8em;
-    i {
-      left: 0;
-      top: -.1em;
-      font-size: 1.4em;
-      position: absolute;
-      &.icon-cloud-upload { font-size: 1.15em; top: 0em; }
-      &.icon-form { font-size: 1.5em; top: -.1em; }
-      &.icon-rocket { font-size: 1.5em;  }
-      &.icon-unlocked { font-size: 1.6em; }
-      &.icon-speedometer {
-        font-size: 1em;
-        top: .1em;
-        left: -.1em;
-      }
-    }
+    margin-top: 1.5em;
   }
   p {
-    max-width: 320px;
+    font-size: 20px;
   }
 }
 
-
-.programmable {
-  background: #e8ebee;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 30px -40px;
-  padding: 30px 40px;
-  p {
-    font-size: 1.4em;
-    a { margin-left: .4em; }
-  }
-  h2 { margin-top: 1em}
-  i { position: relative; }
-  img {
-    width: 100%;
-  }
+.try-it-out {
+  padding: 2em 0;
 }
-
-
-.examples {
-  margin: 30px -40px;
-  padding: 30px 40px;
-  img {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    margin: 20px 0 14px;
-    width: 100%;
-  }
-  .button {
-    position: relative;
-    color: #000 !important;
-    margin: 0px auto;
-    display: block;
-    background: #FFF;
-    font-weight: 500;
-    text-shadow: none;
-    margin: 0 auto;
-    max-width: 215px;
-    text-align: left;
-    padding: 1em 0 1em 4.3em;
-    line-height: 1.2em;
-    i {
-      top: .4em;
-      left: .8em;
-      font-size: 1.7em;
-      position: absolute;
-    }
-  }
-}
-
-
 
 #logout-button { display: none; }
 #login-button  { display: block; }
@@ -418,6 +422,8 @@
   position: relative;
   font-size: 87px;
   color: #919191;
+  display: block;
+  text-align: center;
 }
 
 .dropzone.drop-target .cloud-icon,
@@ -1103,7 +1109,28 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   }
 }
 
+/*** Feature Page *********************************************/
+
+.features-page {
+  header {
+    margin-bottom: 3em;
+  }
+}
+.feature-rows {
+  h3 {
+    margin-bottom: .2em;
+  }
+  img {
+    margin-top: 1em;
+  }
+  .row {
+    margin-bottom: 1.8em;
+  }
+
+}
+
 /*** Pricing ****************************************/
+
 .pricing {
 	background: #fff;
 	max-width: 70em;

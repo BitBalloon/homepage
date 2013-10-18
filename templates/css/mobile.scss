@@ -31,9 +31,33 @@
     font-size: 2.5em;
   }
 
+  .features {
+    .one, .three {
+      .halo {
+        left: -12%;
+      }
+    }
+  }
+
 }
 
 @media #{$medium-small} {
+  .features {
+    .feature{
+      margin-bottom: 1em;
+    }
+    .halo {
+      border: transparent ;
+      background: transparent ;
+      height: 10em;
+      left: 0 !important;
+    }
+    .one, .three {
+      .halo {
+        margin-top: 1em;
+      }
+    }
+  }
   header nav .navlink { display: none !important; }
   .dropzone .how-to>li {
     margin: 0 0 12px 0;
@@ -43,17 +67,6 @@
     margin: 17px 0;
   }
 
-  .features {
-    margin-left: 1em;
-    h2 { font-size: 30px; }
-    h3 { font-size: 18px; }
-    ul { margin-bottom: 22px; }
-    li { font-size: 22px; }
-    p {
-      font-size: 14px;
-      max-width: 100%;
-    }
-  }
   .programmable .icon-deploy-bot {
     font-size: 11em;
     top: .07em;
@@ -98,13 +111,23 @@
   }
 
   .features {
-    margin-left: 0;
-    h3 { font-size: 26px; }
-    li { font-size: 1em; }
+    text-align: center;
+    .halo {
+      width: 100%;
+      height: auto;
+      left: 0
+    }
+    .ripple {
+      display: none;
+    }
+     img {
+      position: relative !important;
+      margin: 0px auto;
+      left: 0 !important;
+      top: 0 !important;
+    }
   }
-  .examples .button {
-    margin-bottom: 1em;
-  }
+
   .dropzone .headline {
     margin-top: 0.7em;
     font-size: 2em;
