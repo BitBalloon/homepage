@@ -251,7 +251,6 @@
     }
   }
   .dashed-box {
-    z-index: 1;
     border-color: rgba(177, 209, 245, 1);
     width: 21em;
     padding: .7em .2em .3em;
@@ -278,7 +277,6 @@
     .cloud {
       position: absolute;
       border-radius: 100%;
-      z-index: 0;
     }
     .one {
       left: -2em;
