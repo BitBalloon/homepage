@@ -1,5 +1,4 @@
 .dashed-box {
-  border: 2px dashed #9B9B9d;
   margin: 0;
   padding: 20px;
   .icon-cloud-icon {
@@ -209,6 +208,21 @@
 
 
 
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(.3em);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+
+
 .home-hero {
   h2 {
     margin: 2em 0 1em;
@@ -242,7 +256,8 @@
 
 
   .cloud-zone {
-    top: -.5em;
+    top: -.8em;
+    -webkit-animation: float 5s ease-in-out 1s infinite;
     transition: all .4s;
     .cloud {
       background: white;
@@ -261,12 +276,12 @@
        margin-top: 0;
     }
     i, .headline {
-      color: #207BF0 !important;
+      color: #2164BB !important;
     }
     .headline {
       font-size: 1.5em;
       font-weight: 500;
-      margin-top: .3em;
+      margin-top: .6em;
     }
   }
 
@@ -279,39 +294,40 @@
       border-radius: 100%;
     }
     .one {
-      left: -2em;
-      top: 2em;
-      height: 15em;
-      width: 16em;
+      left: 2em;
+      bottom: 5.15em;
+      height: 12em;
+      width: 15em;
       box-shadow: -2px 6px 0 -1px #B8EBFF;
     }
     .two {
-      top: -5em;
-      left: 1em;
-      height: 15em;
-      width: 15em;
+      top: -3em;
+      left: 6em;
+      height: 12em;
+      width: 13em;
       box-shadow: 1px -3px 0 0 #B8EBFF;
     }
     .three {
-      top: -7em;
-      left: 9em;
-      height: 14em;
-      width: 18em;
+      top: -4em;
+      left: 14em;
+      height: 12em;
+      width: 12em;
       box-shadow: 2px -8px 0 -5px #B8EBFF;
     }
     .four {
-      top: -2.5em;
-      left: 15.5em;
-      height: 15em;
-      width: 17em;
+      bottom: 5em;
+      left: 16.5em;
+      height: 12em;
+      width: 14em;
       box-shadow: 10px -7px 0 -7px #B8EBFF;
     }
     .bottom {
-      bottom: 2em;
-      left: .5em;
-      height: 17em;
-      width: 33em;
+      bottom: 5em;
+      left: 4.5em;
+      height: 10em;
+      width: 23em;
       box-shadow: 10px 6px 0 -2px #B8EBFF;
+      border-radius: 25%;
     }
   }
 
@@ -399,6 +415,7 @@
   #login-button { display: none; }
   #logout-button { display: block; }
   .signed-in-cta { display: block; }
+  .sign-up-button { display: none; }
 }
 
 @-webkit-keyframes bopping {
