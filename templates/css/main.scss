@@ -209,7 +209,6 @@
 
 
 
-
 .home-hero {
   h2 {
     margin: 2em 0 1em;
@@ -236,6 +235,9 @@
     &:hover {
       background: white;
     }
+  }
+  .signed-in-cta {
+    display: none;
   }
 
 
@@ -399,6 +401,7 @@
 .logged-in {
   #login-button { display: none; }
   #logout-button { display: block; }
+  .signed-in-cta { display: block; }
 }
 
 @-webkit-keyframes bopping {
