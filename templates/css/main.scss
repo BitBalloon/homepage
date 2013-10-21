@@ -286,18 +286,17 @@
       box-shadow: -2px 6px 0 -1px #B8EBFF;
     }
     .two {
-      top: -3em;
+      top: -5em;
       left: 1em;
       height: 15em;
       width: 15em;
-      box-shadow: 1px -3px 0 0px #B8EBFF;
-
+      box-shadow: 1px -3px 0 0 #B8EBFF;
     }
     .three {
       top: -7em;
-      left: 6em;
+      left: 9em;
       height: 14em;
-      width: 20em;
+      width: 18em;
       box-shadow: 2px -8px 0 -5px #B8EBFF;
     }
     .four {
@@ -308,10 +307,10 @@
       box-shadow: 10px -7px 0 -7px #B8EBFF;
     }
     .bottom {
-      bottom: 1em;
+      bottom: 2em;
       left: .5em;
-      height: 19em;
-      width: 32em;
+      height: 17em;
+      width: 33em;
       box-shadow: 10px 6px 0 -2px #B8EBFF;
     }
   }
