@@ -17,14 +17,13 @@
   // border: 4px dashed #3892E3;
   padding: 20px 40px;
   margin: 10px -40px 20px;
-  text-align: center;
   h1, h2, h3, h4, h5, h6, p {
     color: #fff;
  }
 
 .cloud-icon, .cloud-working-icon {
   font-size: 120px;
-  margin: 15px auto 0px;
+  margin: 5px auto 0px;
   position: relative;
   display: block;
 }
@@ -209,19 +208,114 @@
 
 
 
+
+
 .home-hero {
-  .centered {
-    margin: 0 auto;
-    max-width: 35em;
-  }
   h2 {
-    margin: 1em 0 1em;
+    margin: 2em 0 1em;
   }
   .lead {
     font-size: 1.5em;
-    padding: 0 2em;
     font-weight: 300;
+    margin-bottom: 2.5em;
   }
+  .sign-up-button {
+    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px 0 0 1px white;
+    border-radius: .2em;
+    padding: .6em 1em;
+    width: 11em;
+    text-align: center;
+    font-size: 2em;
+    color: #2B9AF0 !important;
+    font-weight: 600;
+    box-shadow: none;
+    text-decoration: none;
+    transition: background .15s ease-out;
+    &:hover {
+      background: white;
+    }
+  }
+
+
+  .cloud-zone {
+    top: -.5em;
+    transition: all .4s;
+    .cloud {
+      background: white;
+      position: absolute;
+      border-radius: 100%;
+    }
+  }
+  .dashed-box {
+    z-index: 1;
+    border-color: rgba(177, 209, 245, 1);
+    width: 21em;
+    padding: .7em .2em .3em;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    i {
+       margin-top: 0;
+    }
+    i, .headline {
+      color: #207BF0 !important;
+    }
+    .headline {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-top: .3em;
+    }
+  }
+
+  .bg-cloud {
+    width: 33em;
+    height: 20em;
+    position: relative;
+    .cloud {
+      position: absolute;
+      border-radius: 100%;
+      z-index: 0;
+    }
+    .one {
+      left: -2em;
+      top: 2em;
+      height: 15em;
+      width: 16em;
+      box-shadow: -2px 6px 0 -1px #B8EBFF;
+    }
+    .two {
+      top: -3em;
+      left: 1em;
+      height: 15em;
+      width: 15em;
+      box-shadow: 1px -3px 0 0px #B8EBFF;
+
+    }
+    .three {
+      top: -7em;
+      left: 6em;
+      height: 14em;
+      width: 20em;
+      box-shadow: 2px -8px 0 -5px #B8EBFF;
+    }
+    .four {
+      top: -2.5em;
+      left: 15.5em;
+      height: 15em;
+      width: 17em;
+      box-shadow: 10px -7px 0 -7px #B8EBFF;
+    }
+    .bottom {
+      bottom: 1em;
+      left: .5em;
+      height: 19em;
+      width: 32em;
+      box-shadow: 10px 6px 0 -2px #B8EBFF;
+    }
+  }
+
 }
 
 @-webkit-keyframes ripple {
@@ -281,7 +375,7 @@
   .feature {
     margin-bottom: 6.5em;
     &.one, &.two {
-      h3 { margin-top: 2em;}
+      h3 { margin-top: 2em; }
     }
   }
   .one img {
