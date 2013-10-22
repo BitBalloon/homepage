@@ -1,4 +1,5 @@
 .dashed-box {
+  border: 2px dashed #9B9B9d;
   margin: 0;
   padding: 20px;
   .icon-cloud-icon {
@@ -209,20 +210,6 @@
 
 
 
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(.3em);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-  }
-}
-
-
-
 .home-hero {
   h2 {
     margin: 2em 0 1em;
@@ -254,11 +241,12 @@
     display: none;
   }
 
-
   .cloud-zone {
     top: -.8em;
-    -webkit-animation: float 5s ease-in-out 1s infinite;
     transition: all .4s;
+    .dashed-box {
+       border: none;
+    }
     .cloud {
       background: white;
       position: absolute;
@@ -319,7 +307,7 @@
       left: 16.5em;
       height: 12em;
       width: 14em;
-      box-shadow: 10px -7px 0 -7px #B8EBFF;
+      box-shadow: 10px 9px 0 -11px #B8EBFF;
     }
     .bottom {
       bottom: 5em;
@@ -345,7 +333,7 @@
 }
 
 .ripple {
-  border: 20px solid rgb(215, 226, 231);
+  border: 20px solid #EBF1F3;
   width: 500px;
   height: 500px;
   border-radius: 500px;
