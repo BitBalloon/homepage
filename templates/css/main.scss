@@ -212,29 +212,28 @@
 
 .home-hero {
   h2 {
-    margin: 2em 0 1em;
+    margin: 1.5em 0 0.5em;
+    font-size: 2.781em;
+    font-weight: 200;
   }
   .lead {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-bottom: 2.5em;
+    font-size: 1.7em;
+    font-weight: 200;
+    margin-bottom: 2em;
   }
   .sign-up-button {
-    background: white;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px 0 0 1px white;
-    border-radius: .2em;
-    padding: .6em 1em;
-    width: 11em;
+    border-radius: 3px;
+    padding: .6em 3em;
     text-align: center;
-    font-size: 2em;
-    color: #2B9AF0 !important;
+    font-size: 1.3em;
     font-weight: 600;
-    box-shadow: none;
     text-decoration: none;
     transition: background .15s ease-out;
+    color: #fff;
+    background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 100%);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     &:hover {
-      background: white;
+      background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 150%);
     }
   }
   .signed-in-cta {
@@ -261,14 +260,14 @@
     text-align: center;
     position: relative;
     i {
-       margin-top: 0;
+       margin-top: -3px;
     }
     i, .headline {
-      color: #2164BB !important;
+      color: #163149 !important;
     }
     .headline {
       font-size: 1.5em;
-      font-weight: 500;
+      font-weight: normal;
       margin-top: .6em;
     }
   }
@@ -277,6 +276,7 @@
     width: 33em;
     height: 20em;
     position: relative;
+    margin: -1.5em 0 -2em;
     .cloud {
       position: absolute;
       border-radius: 100%;
@@ -286,35 +286,35 @@
       bottom: 5.15em;
       height: 12em;
       width: 15em;
-      box-shadow: -2px 6px 0 -1px #B8EBFF;
+      box-shadow: -2px 6px 0 -1px #B8D7FF;
     }
     .two {
       top: -3em;
       left: 6em;
       height: 12em;
       width: 13em;
-      box-shadow: 1px -3px 0 0 #B8EBFF;
+      box-shadow: 1px -3px 0 0 #B8D7FF;
     }
     .three {
       top: -4em;
       left: 14em;
       height: 12em;
       width: 12em;
-      box-shadow: 2px -8px 0 -5px #B8EBFF;
+      box-shadow: 2px -8px 0 -5px #B8D7FF;
     }
     .four {
       bottom: 5em;
       left: 16.5em;
       height: 12em;
       width: 14em;
-      box-shadow: 10px 9px 0 -11px #B8EBFF;
+      box-shadow: 10px 9px 0 -11px #B8D7FF;
     }
     .bottom {
       bottom: 5em;
       left: 4.5em;
       height: 10em;
       width: 23em;
-      box-shadow: 10px 6px 0 -2px #B8EBFF;
+      box-shadow: 10px 6px 0 -2px #B8D7FF;
       border-radius: 25%;
     }
   }
