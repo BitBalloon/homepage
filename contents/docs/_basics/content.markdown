@@ -25,7 +25,6 @@ Each site has a set of admin tools for managing the:
 The admin tools can be accessed from a private dashboard at a url similar to:
 https://www.bitballoon.com/sites/cowboy-sysxtem-73843
 
-
 ### Form Handling
 
 During a deployment, BitBalloon finds any forms in your HTML which don't already have an action attribute and automatically makes them work.
@@ -46,9 +45,9 @@ For best results, set name attributes on the form and it's inputs, like so:
 
 ### Snippets
 
-You can inject code snippets into the footer of your all your sites pages by using premade templates for popular 3rd party scripts like Google Analytics or your own custom code.
+Code snippets can be injected into the footer of every page of a site. The snippets can be premade templates for popular 3rd party scripts like Google Analytics or your own custom code.
 
 
 ### Versions
 
-Every time a site is redeployed, a new version is created. You can access your deployment history in the dashboard and restore any previous deploy to represent your live site.
+Every time a site is updated in any way, a new version is created. Deployment history is accessible from the site dashboard and you can restore any version to represtent your live site at any time.
