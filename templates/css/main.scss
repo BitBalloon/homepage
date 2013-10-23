@@ -905,7 +905,6 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
     margin: 0 0 30px;
     padding: 0;
     position: relative;
-    border-bottom: 1px solid #9B9B9d;
     .right-corner {
       position: absolute;
       right: 0;
@@ -1175,7 +1174,14 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   .row {
     margin-bottom: 1.8em;
   }
-
+  .icon-signal {
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin: 35px 0 0 0;
+    padding-left: 9px;
+  }
 }
 
 /*** Pricing ****************************************/
