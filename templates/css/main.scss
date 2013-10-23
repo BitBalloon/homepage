@@ -321,31 +321,8 @@
 
 }
 
-@-webkit-keyframes ripple {
-  from {
-    -webkit-transform: scale(0);
-    opacity: .75;
-  }
-  to {
-    -webkit-transform: scale(3);
-    opacity: 0;
-  }
-}
 
-.ripple {
-  border: 20px solid #EBF1F3;
-  width: 500px;
-  height: 500px;
-  border-radius: 500px;
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-  top: -142px;
-  left: -142px;
-  &.active {
-    -webkit-animation: ripple 3s linear 1s;
-  }
-}
+
 
 .features {
   margin-top: 2.5em;
