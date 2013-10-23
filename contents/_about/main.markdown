@@ -1,12 +1,12 @@
 ## About BitBalloon
 
-<p class="lead">BitBalloon is all about connecting the elegant simplicity of static sites with the power of the programmable web. Our focus is making it as simple as possible to publish sites that meaningfully leverage the API economy.</p>
+<p class="lead">BitBalloon is all about connecting the elegant simplicity of static sites with the power of the programmable web. Our focus is making it as simple as possible to publish sites that leverage the API economy in a meaningful way.</p>
 
 
 ### Why are you offering Hosting for free?
 Being able to __write__ to the internet, not just read it, is a basic human right. We want to encourage web literacy by removing as many barriers as possible to getting some HTML online. We also want to encourage a more efficient and compatible web by demonstrating web performance and API best practices.
 
-Of course, a freemium modal also helps people discover our premium offerings!
+Of course, a freemium model also helps people discover our premium offerings!
 
 ### How does BitBalloon make my site so fast?
 
