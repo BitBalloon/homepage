@@ -1,15 +1,12 @@
 ## About BitBalloon
 
-<p class="lead">BitBalloon is built by makers of <a href="http://www.webpop.com">Webpop</a>, a powerful cloud CMS platform for creating dynamic sites and webapps. BitBalloon packages performance optimization, forms handling and high performance infrastructure of Webpop into a highly focused service for static sites.</p>
+<p class="lead">BitBalloon is all about connecting the elegant simplicity of static sites with the power of the programmable web. Our focus is making it as simple as possible to publish sites that meaningfully leverage the API economy.</p>
+
 
 ### Why are you offering Hosting for free?
-Being able to __write__ to the internet, not just read it, is a basic human right.
+Being able to __write__ to the internet, not just read it, is a basic human right. We want to encourage web literacy by removing as many barriers as possible to getting some HTML online. We also want to encourage a more efficient and compatible web by demonstrating web performance and API best practices.
 
-Providing an easy place for anyone to upload their site directly onto the internet is our way of supporting this idea to become a reality.
-
-We people to get a first hand experience of the huge difference that doing some asset optimization can make in how their sites perform. Heavy, uncached websites are a huge waste of time and electricity. They also pose major accessibility problem for billions of people with limited internet bandwidth. The web would be a whole lot faster if everyone correctly implemented the web performance best practices that BitBalloon automates.
-
-Of course, a freemium modal also helps people discover our premium  offerings!
+Of course, a freemium modal also helps people discover our premium offerings!
 
 ### How does BitBalloon make my site so fast?
 
