@@ -31,26 +31,8 @@ font-style: normal;
     font-weight: normal;
     font-style: normal;
 }
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-    font-family: 'icomoon';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
 [class*="icon-"] {
-*/
-.icon-triangle-down, .icon-site, .icon-process-icon, .icon-play-button, .icon-inbox, .icon-grey-cloud, .icon-google-plus-icon, .icon-checkmark, .icon-alert-icon, .icon-back, .icon-bag-of-money-icon, .icon-balloon, .icon-signal, .icon-cloud-icon, .icon-twitter-icon, .icon-connect, .icon-box-plus, .icon-plus, .icon-question, .icon-download, .icon-close, .icon-gears, .icon-facebook-icon, .icon-external-link-icon, .icon-drag-icon, .icon-cloud-working-icon, .icon-mail, .icon-lightning, .icon-briefcase, .icon-octocat, .icon-gem, .icon-gear, .icon-code, .icon-doc, .icon-white-label, .icon-globe, .icon-unlocked, .icon-locked, .icon-edit, .icon-trash, .icon-form, .icon-smiley, .icon-versions, .icon-rocket, .icon-user, .icon-robot, .icon-inject, .icon-cloud-upload, .icon-server, .icon-brand, .icon-deploy-bot, .icon-power-balloon, .icon-business-balloons, .icon-speedometer, .icon-site-upload, .icon-tools {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -58,173 +40,126 @@ you can use the generic selector below, but it's slower:
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.icon-triangle-down:before {
-    content: "\e002";
+
+.icon-open:before {
+    content: "\e600";
 }
-.icon-site:before {
-    content: "\e003";
+.icon-dna:before {
+    content: "\e601";
 }
-.icon-process-icon:before {
-    content: "\e004";
+.icon-performance:before {
+    content: "\e602";
 }
-.icon-play-button:before {
-    content: "\e005";
-}
-.icon-inbox:before {
-    content: "\e006";
-}
-.icon-grey-cloud:before {
-    content: "\e007";
-}
-.icon-google-plus-icon:before {
-    content: "\e008";
-}
-.icon-checkmark:before {
-    content: "\e011";
-}
-.icon-alert-icon:before {
-    content: "\e012";
-}
-.icon-back:before {
-    content: "\e013";
-}
-.icon-bag-of-money-icon:before {
-    content: "\e014";
-}
-.icon-balloon:before {
-    content: "\e015";
-}
-.icon-signal:before {
-    content: "\e01d";
-}
-.icon-cloud-icon:before {
-    content: "\e010";
-}
-.icon-twitter-icon:before {
-    content: "\e001";
-}
-.icon-connect:before {
-    content: "\e01b";
-}
-.icon-box-plus:before {
-    content: "\e01c";
-}
-.icon-plus:before {
-    content: "\e019";
-}
-.icon-question:before {
-    content: "\e018";
-}
-.icon-download:before {
-    content: "\e017";
-}
-.icon-close:before {
-    content: "\e000";
-}
-.icon-gears:before {
-    content: "\e009";
-}
-.icon-facebook-icon:before {
-    content: "\e00b";
-}
-.icon-external-link-icon:before {
-    content: "\e00c";
-}
-.icon-drag-icon:before {
-    content: "\e00d";
-}
-.icon-cloud-working-icon:before {
-    content: "\e00f";
-}
-.icon-mail:before {
-    content: "\e01a";
-}
-.icon-lightning:before {
-    content: "\e01e";
-}
-.icon-briefcase:before {
-    content: "\e016";
-}
-.icon-octocat:before {
-    content: "\e01f";
-}
-.icon-gem:before {
-    content: "\e00a";
-}
-.icon-gear:before {
-    content: "\e020";
-}
-.icon-code:before {
-    content: "\e00e";
-}
-.icon-doc:before {
-    content: "\e021";
+.icon-zap-cloud:before {
+    content: "\e603";
 }
 .icon-white-label:before {
-    content: "\e022";
-}
-.icon-globe:before {
-    content: "\e025";
-}
-.icon-unlocked:before {
-    content: "\e023";
-}
-.icon-locked:before {
-    content: "\e024";
-}
-.icon-edit:before {
-    content: "\e026";
-}
-.icon-trash:before {
-    content: "\e027";
-}
-.icon-form:before {
-    content: "\e028";
-}
-.icon-smiley:before {
-    content: "\e029";
+    content: "\e604";
 }
 .icon-versions:before {
-    content: "\e02a";
-}
-.icon-rocket:before {
-    content: "\e02b";
+    content: "\e605";
 }
 .icon-user:before {
-    content: "\e02c";
+    content: "\e606";
 }
-.icon-robot:before {
-    content: "\e02d";
+.icon-unlocked:before {
+    content: "\e607";
 }
-.icon-inject:before {
-    content: "\e02e";
-}
-.icon-cloud-upload:before {
-    content: "\e02f";
-}
-.icon-server:before {
-    content: "\e032";
-}
-.icon-brand:before {
-    content: "\e031";
-}
-.icon-deploy-bot:before {
-    content: "\e030";
-}
-.icon-power-balloon:before {
-    content: "\e033";
-}
-.icon-business-balloons:before {
-    content: "\e034";
-}
-.icon-speedometer:before {
-    content: "\e035";
-}
-.icon-site-upload:before {
-    content: "\e036";
+.icon-trash:before {
+    content: "\e608";
 }
 .icon-tools:before {
-    content: "\e037";
+    content: "\e609";
+}
+.icon-speedometer:before {
+    content: "\e60a";
+}
+.icon-smiley:before {
+    content: "\e60b";
+}
+.icon-site-upload:before {
+    content: "\e60c";
+}
+.icon-signal:before {
+    content: "\e60d";
+}
+.icon-servers:before {
+    content: "\e60e";
+}
+.icon-server:before {
+    content: "\e60f";
+}
+.icon-rocket:before {
+    content: "\e610";
+}
+.icon-robot:before {
+    content: "\e611";
+}
+.icon-power-balloon:before {
+    content: "\e612";
+}
+.icon-plus:before {
+    content: "\e613";
+}
+.icon-octocat:before {
+    content: "\e614";
+}
+.icon-mail:before {
+    content: "\e615";
+}
+.icon-locked:before {
+    content: "\e616";
+}
+.icon-lightning:before {
+    content: "\e617";
+}
+.icon-inject:before {
+    content: "\e618";
+}
+.icon-globe:before {
+    content: "\e619";
+}
+.icon-github:before {
+    content: "\e61a";
+}
+.icon-gem:before {
+    content: "\e61b";
+}
+.icon-form:before {
+    content: "\e61c";
+}
+.icon-edit:before {
+    content: "\e61d";
+}
+.icon-deploy-bot:before {
+    content: "\e61e";
+}
+.icon-connect:before {
+    content: "\e61f";
+}
+.icon-code:before {
+    content: "\e620";
+}
+.icon-cloud-upload:before {
+    content: "\e621";
+}
+.icon-briefcase:before {
+    content: "\e622";
+}
+.icon-box-plus:before {
+    content: "\e623";
+}
+.icon-balloon:before {
+    content: "\e624";
+}
+.icon-balloon-bot:before {
+    content: "\e625";
+}
+.icon-API:before {
+    content: "\e626";
 }

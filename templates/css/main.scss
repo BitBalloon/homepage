@@ -2,7 +2,7 @@
   border: 2px dashed #9B9B9d;
   margin: 0;
   padding: 20px;
-  .icon-cloud-icon {
+  .icon-cloud-upload {
     margin: -8px auto 0;
     position: relative;
   }
@@ -233,6 +233,7 @@
     transition: background .15s ease-out;
     color: #fff;
     display: block;
+    background: #6BB6F5;
     background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 100%);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     margin-bottom: 3em;
@@ -246,7 +247,7 @@
   .dashed-box {
     border-color: rgba(177, 209, 245, 1);
     padding: 3.5em 0.2em 4.2em;
-    margin: 3em auto 1em;
+    margin: 1.2em auto 1em;
     text-align: center;
     i { color: #F4F9FF;}
     .headline {
@@ -262,20 +263,40 @@
 }
 
 .reasons {
+  .one {
+    h4 { margin-top: 1em; }
+  }
   h1 {
-    margin-top: .5em;
+    margin: .5em 0 1.5em;
+  }
+  h4 {
+    margin-top: 1.5em;
   }
   i {
     color: #114086;
     border-radius: 100%;
-    display: inline-block;
+    display: block;
     text-align: center;
-    font-size: 90px;
-    width: 100%;
+    font-size: 80px;
+    width: 120px;
+    height: 120px;
     line-height: 120px;
-    margin: 35px 0 0 0;
+    margin: .35em auto .6em;
+    background: #FCFCFC;
+    box-shadow: 0 0 0 20px #F7F7F7;
     &.icon-signal {
       font-size: 95px;
+    }
+    &.icon-speedometer {
+      font-size: 62px;
+      line-height: 110px;
+    }
+  }
+  pre {
+    display: inline-block;
+    code {
+      padding-right: 1.6em;
+      margin: -1.2em 0 0 0;
     }
   }
 }
@@ -759,7 +780,7 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
       width: 100%;
     }
   }
-  .icon-cloud-icon {
+  .icon-cloud-upload {
     display: block;
     text-align: center;
     margin-top: 70px;
@@ -1163,7 +1184,7 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   }
   .dashed-box {
     margin-bottom: 3em;
-    .icon-cloud-icon {
+    .icon-cloud-upload {
       margin: 0 auto;
       width: 100%;
       display: inline-block;
