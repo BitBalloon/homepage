@@ -219,19 +219,23 @@
   .lead {
     font-size: 1.6em;
     font-weight: 200;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
+    max-width: 24em;
   }
   .sign-up-button {
     border-radius: 3px;
-    padding: .6em 3em;
+    padding: .7em 1em;
+    width: 14em;
     text-align: center;
     font-size: 1.3em;
     font-weight: 600;
     text-decoration: none;
     transition: background .15s ease-out;
     color: #fff;
+    display: block;
     background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 100%);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    margin-bottom: 3em;
     &:hover {
       background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 150%);
     }
@@ -239,136 +243,43 @@
   .signed-in-cta {
     display: none;
   }
-
-  .cloud-zone {
-    top: -.8em;
-    transition: all .4s;
-    .dashed-box {
-       border: none;
-    }
-    .cloud {
-      background: white;
-      position: absolute;
-      border-radius: 100%;
-    }
-  }
   .dashed-box {
     border-color: rgba(177, 209, 245, 1);
-    width: 21em;
-    padding: .7em .2em .3em;
-    margin: 0 auto;
+    padding: 3.5em 0.2em 4.2em;
+    margin: 3em auto 1em;
     text-align: center;
-    position: relative;
-    i {
-       margin-top: -3px;
-    }
-    i, .headline {
-      color: #163149 !important;
-    }
+    i { color: #F4F9FF;}
     .headline {
       font-size: 1.5em;
+      line-height: 1.5em;
+      max-width: 14em;
       font-weight: normal;
-      margin-top: .6em;
-    }
-  }
-
-  .bg-cloud {
-    width: 33em;
-    height: 20em;
-    position: relative;
-    margin: -1.5em 0 -2em;
-    .cloud {
-      position: absolute;
-      border-radius: 100%;
-    }
-    .one {
-      left: 2em;
-      bottom: 5.15em;
-      height: 12em;
-      width: 15em;
-      box-shadow: -2px 6px 0 -1px #B8D7FF;
-    }
-    .two {
-      top: -3em;
-      left: 6em;
-      height: 12em;
-      width: 13em;
-      box-shadow: 1px -3px 0 0 #B8D7FF;
-    }
-    .three {
-      top: -4em;
-      left: 14em;
-      height: 12em;
-      width: 12em;
-      box-shadow: 2px -8px 0 -5px #B8D7FF;
-    }
-    .four {
-      bottom: 5em;
-      left: 16.5em;
-      height: 12em;
-      width: 14em;
-      box-shadow: 10px 9px 0 -11px #B8D7FF;
-    }
-    .bottom {
-      bottom: 5em;
-      left: 4.5em;
-      height: 10em;
-      width: 23em;
-      box-shadow: 10px 6px 0 -2px #B8D7FF;
-      border-radius: 25%;
+      margin: 1em auto 0;
+      color: #F4F9FF;
     }
   }
 
 }
 
-
-
-
-.features {
-  margin-top: 2.5em;
+.reasons {
   h1 {
-    margin-bottom: 1.4em;
+    margin-top: .5em;
   }
-  .halo {
-    width: 15em;
-    height: 15em;
-    border: 12px solid rgb(179, 226, 248);
+  i {
+    color: #114086;
     border-radius: 100%;
-    position: relative;
-    background: #fff;
-    img {
-     width: 8em;
-     position: absolute;
-     top: 1.2em;
-     left: 2.5em;
+    display: inline-block;
+    text-align: center;
+    font-size: 90px;
+    width: 100%;
+    line-height: 120px;
+    margin: 35px 0 0 0;
+    &.icon-signal {
+      font-size: 95px;
     }
-
-    .code {
-     top: 3.1em;
-     left: 2.8em;
-    }
-    .server {
-      top: 3em;
-      left: 2.8em;
-    }
-  }
-  .feature {
-    margin-bottom: 6.5em;
-    &.one, &.two {
-      h3 { margin-top: 2em; }
-    }
-  }
-  .one img {
-    top: 2.8em;
-    left: 2.3em;
-  }
-  h3 {
-    margin-top: 1.5em;
-  }
-  p {
-    font-size: 20px;
   }
 }
+
 
 .try-it-out {
   padding: 2em 0;
@@ -1174,13 +1085,12 @@ input.submission-search { display: inline-block; width: 8em; margin-right: 10px;
   .row {
     margin-bottom: 1.8em;
   }
-  .icon-signal {
+  .major i {
     font-size: 100px;
     width: 150px;
     height: 150px;
     line-height: 150px;
     margin: 35px 0 0 0;
-    padding-left: 9px;
   }
 }
 
