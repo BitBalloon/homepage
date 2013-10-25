@@ -1342,9 +1342,6 @@ body .folder-support { display: none; }
 body.folder-support span.folder-support { display: inline; }
 body.folder-support span.no-folder-support { display: none; }
 
-header .brand:before { content: "\e015"; float: left; font-size: 52px; margin-right: 10px; font-family: icomoon; speak: none; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased;
-}
-
 .login-dropdown { display: none; }
 .logged-in .login-button { display: none; }
 .logged-in .login-dropdown { display: block; }
