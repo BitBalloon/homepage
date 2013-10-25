@@ -1,6 +1,6 @@
 @media #{$large} {
   .new.project-card {
-    .icon-cloud-icon {
+    .icon-cloud-upload {
       margin-top: 50px;
     }
   }
@@ -9,12 +9,6 @@
 
 
 @media #{$medium} {
-  .dropzone .how-to>li {
-    font-size: 20px;
-    font-weight: 400;
-    margin-left: -15px;
-    margin-right: -28px;
-  }
 
   .chart.numeric h4 {
     font-size: 15px;
@@ -25,18 +19,9 @@
       margin-top: 15px;
     }
   }
-
   .dropzone .headline {
     margin-top: 0.8em;
     font-size: 2.5em;
-  }
-
-  .features {
-    .one, .three {
-      .halo {
-        left: -12%;
-      }
-    }
   }
 
 }
@@ -51,29 +36,13 @@
       margin: 0 auto;
     }
   }
-  .cloud-zone {
-    width: 100%;
-    margin: 12em auto 0em;
-    .bg-cloud {
-      margin: 0 auto;
-    }
+  .reasons {
+    text-align: center;
+    i { margin-bottom: .4em }
+    h4 { margin-top: 0 !important; }
+    p { max-width: 30em; margin: 0 auto 1.7em; }
   }
-  .features {
-    .feature{
-      margin-bottom: 1em;
-    }
-    .halo {
-      border: transparent ;
-      background: transparent ;
-      height: 10em;
-      left: 0 !important;
-    }
-    .one, .three {
-      .halo {
-        margin-top: 1em;
-      }
-    }
-  }
+
   header nav .navlink { display: none !important; }
 
   .project-card .date, .project-card .status {
@@ -82,7 +51,7 @@
   .new-deploy {
     width: 100%;
     .new.project-card {
-      .icon-cloud-icon {
+      .icon-cloud-upload {
         font-size: 90px;
         margin-top: 40px;
       }
@@ -114,44 +83,16 @@
     padding-bottom: 4em;
   }
 
-  .features {
-    text-align: center;
-    .halo {
-      width: 100%;
-      height: auto;
-      left: 0
-    }
-    .ripple {
-      display: none;
-    }
-     img {
-      position: relative !important;
-      margin: 0px auto;
-      left: 0 !important;
-      top: 0 !important;
-    }
-  }
-
   .dropzone .headline {
     margin-top: 0.7em;
     font-size: 2em;
   }
-  .cloud-zone {
-    display: none;
-  }
-
 
   .new-deploy {
     .new.project-card {
       .spacer { width: 100px; }
       .headline { font-size: 16px; }
     }
-  }
-
-
-
-  table.pricing .icon-question {
-    display: none;
   }
 
 }
