@@ -40,7 +40,7 @@
     text-align: center;
     i { margin-bottom: .4em }
     h4 { margin-top: 0 !important; }
-    p { max-width: 30em; margin: 0 auto 1.7em; }
+    p, pre { max-width: 30em; margin: 0 auto 1.7em; }
   }
 
   header nav .navlink { display: none !important; }
