@@ -24,6 +24,24 @@
   "plugins": {
     "compilers": {
       ".css": "punch-sass-compiler"
+    },
+
+    "content_handler": "punch-blog-content-handler",
+
+    "helpers": {
+      "archive_helper": "./helpers/archive_helper.js",
+      "index_helper": "./helpers/index_helper.js"
+    }
+  },
+  "blog": {
+    "posts_dir": "posts",
+    "post_url": "/blog/{title}",
+    "archive_urls": {
+        "all": "/archive",
+        "year": "/{year}",
+        "year_month": "/{year}/{month}",
+        "year_month_date": "/{year}/{month}/{date}",
+        "tag": "/tag/{tag}"
     }
   }
 }
