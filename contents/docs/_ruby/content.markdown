@@ -147,10 +147,10 @@ site.update(:zip => "/tmp/my-site.zip")
 site.wait_for_ready
 ```
 
-Update the name of the site (its subdomain), the custom domain and the notification email for form submissions:
+Update the name of the site (its subdomain), the custom domain, the notification email for form submissions and set a password:
 
 ```ruby
-site.update(:name => "my-site", :custom_domain => "www.example.com", :notification_email => "me@example.com")
+site.update(:name => "my-site", :custom_domain => "www.example.com", :notification_email => "me@example.com", :password => "secret-password")
 ```
 
 Deleting a site:
