@@ -46,7 +46,7 @@ module.exports = {
     var self = this;
 
     var archive_url_regexs = _.map(blog_content_handler.archiveUrls, function(url) {
-      return new RegExp("^" + url.pattern + "\\/index$", "g");
+      return new RegExp("^/blog" + url.pattern + "\\/index$", "g");
     });
 
     if (path_utils.matchPath(basepath, archive_url_regexs)) {

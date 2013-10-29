@@ -29,18 +29,18 @@
 
     "helpers": {
       "archive_helper": "./helpers/archive_helper.js",
-      "index_helper": "./helpers/index_helper.js"
+      "blog_helper": "./helpers/blog_helper.js"
     }
   },
   "blog": {
     "posts_dir": "posts",
-    "post_url": "/blog/{title}",
+    "post_url": "/blog/{year}/{month}/{date}/{title}",
     "archive_urls": {
-        "all": "/archive",
-        "year": "/{year}",
-        "year_month": "/{year}/{month}",
-        "year_month_date": "/{year}/{month}/{date}",
-        "tag": "/tag/{tag}"
+        "all": "/blog/archive",
+        "year": "/blog/{year}",
+        "year_month": "/blog/{year}/{month}",
+        "year_month_date": "/blog/{year}/{month}/{date}",
+        "tag": "/blog/tag/{tag}"
     }
   }
 }

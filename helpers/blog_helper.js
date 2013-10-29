@@ -83,7 +83,7 @@ module.exports = {
   get: function(basepath, file_extension, options, callback){
     var self = this;
 
-    if (!path_utils.matchPath(basepath, "^/blog$")) {
+    if (!path_utils.matchPath(basepath, "^/blog/index$")) {
       return callback(null, {}, {}, null);
     }
 
