@@ -3,7 +3,7 @@ Submissions
 
 The `/submissions` endpoint gives access to the form submissions of your BitBalloon sites. You can scope submissions to a specific site (`/sites/{site_id}/submissions`) or to a specific form (`/forms/{form_id}/submissions`).
 
-### <a name="get-sites" data-magellan-destination="get-submissions"></a>Get Submissions
+### <a name="get-sites"></a>Get Submissions
 
 
 * `GET /submissions` will return a list of form submissions

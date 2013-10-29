@@ -4,7 +4,6 @@ Sites
 The `/sites` endpoint allows you to access the sites deployed on BitBalloon.
 
 
-<span data-magellan-destination="get-sites"></span>
 ### <a name="get-sites"></a>Get Sites
 
 * `GET /sites` will return all sites you have access to.
@@ -27,7 +26,6 @@ The `/sites` endpoint allows you to access the sites deployed on BitBalloon.
 ]
 ```
 
-<span data-magellan-destination="get-site"></span>
 ### <a name="get-site"></a> Get Site
 
 * `GET /sites/3970e0fe-8564-4903-9a55-c5f8de49fb8b` will return the site from its ID
@@ -51,13 +49,10 @@ The `/sites` endpoint allows you to access the sites deployed on BitBalloon.
 ```
 
 
-<span  data-magellan-destination="create-site"></span>
 ### <a name="create-site"></a>Create Site
-
 
 Creating a site will initiate a new deploy. You can either create a new site with a list of files you intend to upload, or by posting a ZIP file.
 
-<span data-magellan-destination="post-a-zip"></span>
 ### <a name="post-a-zip"></a>POST a ZIP file
 
 * `POST /sites` with `zip=zip-file`. You must use `Content-Type: multipart/form-data` to send the zip file in a property called `zip`.
@@ -80,7 +75,6 @@ Here's an example of creating a new site from a zip file called `landing.zip` vi
 curl -F "zip=@landing.zip;type=application/zip" https://www.bitballoon.com/api/v1/sites?access_token={access_token}
 ```
 
-<span data-magellan-destination="post-a-list"></span>
 ### <a name="post-a-list"></a>POST a list of files
 
 * `POST /sites` with `{files: {"/index.html": "SHA1_OF_YOUR_INDEX_HTML"}}` will create a new site in the `uploading` state. You must use `Content-Type: application/json`
@@ -101,7 +95,6 @@ This will return `201 Created` with the API URL for the new site in the `Locatio
 
 To upload any required files, use the `PUT /sites/{site_id}/files/{path}` endpoint for each file. Once all the files are uploaded, the processing of the site will begin.
 
-<span data-magellan-destination="update-site"></span>
 ### <a name="update-site"></a>Update Site
 
 * `PATCH /sites/{site_id}` will let you update some attributes on a site
@@ -109,7 +102,6 @@ To upload any required files, use the `PUT /sites/{site_id}/files/{path}` endpoi
 
 This lets you update the `name`, `custom_domain`, `password` and `notification_email` fields of a site.
 
-<span data-magellan-destination="destroy-site"></span>
 ### <a name="destroy-site"></a>Destroy Site
 
 

@@ -3,7 +3,6 @@ Forms
 
 The `/forms` endpoint allow you to access forms from your BitBalloon sites. You can scope forms to a specific site with `/sites/{site_id}/forms`.
 
-<span data-magellan-destination="get-forms"></span>
 ### <a name="get-forms"></a>Get Forms
 
 

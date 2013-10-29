@@ -3,7 +3,6 @@ Deploys
 
 You can access all deploys for a specific site.
 
-<span data-magellan-destination="get-deploys"></span>
 ### <a name="get-deploys"></a> Get Deploys
 
 * `GET /sites/{site_id}/deploys` a list of all deploys
@@ -29,7 +28,6 @@ You can access all deploys for a specific site.
 ]
 ```
 
-<span data-magellan-destination="get-deploy"></span>
 ### <a name="get-deploy"></a> Get Deploy
 
 * `GET /sites/{site_id}/deploys/{deploy_id}` a specific deploy
@@ -52,7 +50,6 @@ You can access all deploys for a specific site.
   "state": "old"
 }
 ```
-<span data-magellan-destination="restore-deploy"></span>
 ### <a name="restore-deploy"></a> Restore Deploy
 
 * `POST /sites/{site_id}/deploys/{deploy_id}/restore` restore an old deploy and make it the live version of the site
