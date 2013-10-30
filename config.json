@@ -33,7 +33,8 @@
       "blog_helper": "./helpers/blog_helper.js",
       "formatted_date_helper": "./helpers/formatted_date_helper.js",
       "feed_helper": "./helpers/feed_helper.js",
-      "thirdparty_snippets_helper": "punch-thirdparty-snippets-helper"
+      "thirdparty_snippets_helper": "./helpers/third_party_snippets_helper.js",
+      "current_page_helper": "./helpers/current_helper.js"
     }
   },
 
