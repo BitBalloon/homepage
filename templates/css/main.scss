@@ -1333,11 +1333,49 @@ $number-size: 70px;
         display: block;
       }
     }
-
   }
-
 }
 
+
+/*** BLOG *********************************************/
+
+.blog {
+  header {
+    max-width: 62em;
+    margin: 1em auto 0;
+    .entry-title {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 3.3em;
+    }
+    .entry-meta {
+      text-align: center;
+      display: block;
+      color: gray;
+      font-size: 1em;
+      margin: .5em auto 1em;
+    }
+  }
+  .social-content, .entry-content {
+    max-width: 42em;
+    margin: 0 auto 5em;
+  }
+  .entry-content {
+    p { font-size: 1.4em; }
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    border-radius: 4px;
+  }
+}
+
+.attribution {
+  color: gray;
+  font-size: .6em;
+  display: block;
+  line-height: 2em;
+}
 
 body .folder-support { display: none; }
 body.folder-support span.folder-support { display: inline; }
@@ -1346,3 +1384,6 @@ body.folder-support span.no-folder-support { display: none; }
 .login-dropdown { display: none; }
 .logged-in .login-button { display: none; }
 .logged-in .login-dropdown { display: block; }
+
+
+

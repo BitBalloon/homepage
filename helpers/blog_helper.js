@@ -12,7 +12,6 @@ var last_modified = null;
 
 var fetch_content = function(callback) {
   recent_posts = [];
-
   //reset posts list
   blog_content_handler.allPosts = {};
 
@@ -28,6 +27,7 @@ var fetch_content = function(callback) {
         if (recent_posts_list.length) {
           blog_content_handler.getPost(path.join(recent_posts_list.shift().permalink, "index"), function(err, post_contents, modified_date) {
             var post_paras = post_contents.content.replace(/\n/g, " ").match(/(<p[^>]*>.*?<\/p>)/g);
+
 
             if (teaser_length < 1) {
               paras_to_show = post_paras.length;

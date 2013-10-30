@@ -1,28 +1,32 @@
-<div id="main-content">
-  <article class="hentry">
-    <h2 class="entry-title">asdasd{{{ title }}}</h2>
-    <time class="updated" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
+<section class="blog">
 
-    <div class="entry-content">
-      {{{content}}}
+  <div class="row">
+    <div class="columns large-12">
+
+      <article class="hentry">
+        <header>
+          <h2 class="entry-title text-center">{{{ title }}}</h2>
+
+          <p class="entry-meta">
+            Written by {{author}} on
+            <time class="updated" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
+          </p>
+        </header>
+
+        <div class="entry-content">
+          <hr/>
+          {{{content}}}
+        </div>
+
+        <div class="social-content">
+          <div id="disqus_block">
+            {{{disqus_snippet}}}
+          </div>
+        </div>
+
+      </article>
     </div>
 
-    <aside role="meta">
-      <div role="tags">
-        <span role="icon" aria-hidden="true" class="icon-tag"></span><span>Tags:</span></span>
-        {{#tags}}
-          <a href="/blog/tag/{{#downcase}}{{.}}{{/downcase}}">{{.}}</a>&nbsp;
-        {{/tags}}
-      </div>
+  </div>
 
-      <div role="social_media">
-        {{{tweet_snippet}}}
-      </div>
-    </aside>
-
-    <div id="disqus_block">
-      {{{disqus_snippet}}}
-    </div>
-
-  </article>
-</div>
+</section>

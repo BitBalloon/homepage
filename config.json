@@ -20,6 +20,7 @@
       "/js/app.coffee"
     ]
   },
+
   "plugins": {
     "compilers": {
       ".css": "punch-sass-compiler"
@@ -29,18 +30,33 @@
 
     "helpers": {
       "archive_helper": "./helpers/archive_helper.js",
-      "blog_helper": "./helpers/blog_helper.js"
+      "blog_helper": "./helpers/blog_helper.js",
+      "formatted_date_helper": "./helpers/formatted_date_helper.js",
+      "feed_helper": "./helpers/feed_helper.js",
+      "thirdparty_snippets_helper": "punch-thirdparty-snippets-helper"
     }
   },
+
   "blog": {
     "posts_dir": "posts",
     "post_url": "/blog/{year}/{month}/{date}/{title}",
+    "teaser_length": 3,
+    "homepage_posts": 10,
+
     "archive_urls": {
         "all": "/blog/archive",
         "year": "/blog/{year}",
         "year_month": "/blog/{year}/{month}",
         "year_month_date": "/blog/{year}/{month}/{date}",
         "tag": "/blog/tag/{tag}"
+    }
+  },
+  "thirdparty_snippets": {
+    "disqus": {
+        "shortname": "bitballoon"
+    },
+    "twitter": {
+        "user": "bitballoon"
     }
   }
 }

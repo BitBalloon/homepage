@@ -1,25 +1,45 @@
 {{> header }}
 
-    <div class="posts">
+  <div class="main blog">
+    <section class="sheet">
+      <div class="row">
 
-      {{#recent_posts}}
-      <article class="hentry">
-        <h2 class="entry-title"><a href="{{ permalink }}">{{{ title }}}</a></h2>
-        <time class="updated" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
+        <div class="columns large-12 ">
 
-        <div class="entry-content">
-          {{{ content }}}
+          <div class="posts">
+
+            {{#recent_posts}}
+            <article>
+              <header>
+                <h2 class="entry-title text-center"><a href="{{ permalink }}">{{{ title }}}</a></h2>
+
+                <p class="entry-meta">
+                  Written by {{author}} on
+                  <time class="updated" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
+                </p>
+              </header>
+
+              <div class="entry-content">
+                <hr/>
+                {{{ content }}}
+
+
+                {{#is_teaser}}
+                <div>
+                  <a href="{{ permalink }}" class="more">More »</a>
+                </div>
+                {{/is_teaser}}
+
+              </div>
+
+            </article>
+            {{/recent_posts}}
+
+          </div>
         </div>
-        {{#is_teaser}}
-        <div><a href="{{ permalink }}" class="more">More »</a></div>
-        {{/is_teaser}}
-      </article>
-      {{/recent_posts}}
 
-    </div>
-
-    <div id="browse_archive">
-      <a href="/blog/archive">Browse Archive</a>
-    </div>
+      </div>
+    </section>
+  </div>
 
 {{> footer }}
