@@ -4,11 +4,11 @@
   <div class="row  sheet">
     <div class="large-3 columns">
       <ul class="docs-nav">
-        <li><a href="/docs">Getting Started</a></li>
-        <li><a href="/docs/basics">The Basics</a></li>
-        <li><a href="/docs/zapier">Zapier</a></li>
-        <li><a href="/docs/api">API Reference <i class="icon-external-link"></i></a></li>
-        <li><a href="/docs/ruby">Ruby Client</a></li>
+        <li class="{{#current}}/docs{{/current}}"><a href="/docs">Getting Started</a></li>
+        <li class="{{#current}}/docs/basics{{/current}}"><a href="/docs/basics">The Basics</a></li>
+        <li class="{{#current}}/docs/zapier{{/current}}"><a href="/docs/zapier">Zapier</a></li>
+        <li class="{{#current}}/docs/api{{/current}}"><a href="/docs/api">API Reference <i class="icon-external-link"></i></a></li>
+        <li class="{{#current}}/docs/ruby{{/current}}"><a href="/docs/ruby">Ruby Client</a></li>
       </ul>
     </div>
 
@@ -21,14 +21,3 @@
 
 {{> footer }}
 
-<script type="text/javascript">
-var str=location.href.toLowerCase();
-
-$('.docs-nav li a').each(function() {
-  if (str.indexOf(this.href.toLowerCase()) > -1) {
-    $("li.active").removeClass("active");
-    $(this).parent().addClass("active");
-  }
-});
-
-</script>

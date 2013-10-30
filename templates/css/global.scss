@@ -293,6 +293,9 @@ header {
       font-size: 16px;
       > a {
         color: rgb(132, 138, 143);
+        &.current {
+          color: #36383A;
+        }
         &:hover {
           color: rgb(81, 83, 85);
         }
