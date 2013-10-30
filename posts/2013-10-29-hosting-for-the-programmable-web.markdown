@@ -31,7 +31,7 @@ The combination of BitBalloon and Zapier means that instead of being forced to f
 
 Our mission for creating much more accessible and API-driven hosting platform doesn't end with our end users. BitBalloon's underlying infrastructure is open for other developers to leverage in their own services.
 
-If you're building web authoring tools, you can use BitBalloon to power your own "site aware", API-backed publishing infrastructure, but under your own brand!
+If you're building web authoring tools, you can use BitBalloon's infrastructure to power your own "site aware", API-backed web publishing using your own brand!
 
 
 

@@ -1,32 +1,36 @@
-<section class="blog">
 
-  <div class="row">
-    <div class="columns large-12">
+<div class="main blog">
+  <section class="sheet">
 
-      <article class="hentry">
-        <header>
-          <h2 class="entry-title text-center">{{{ title }}}</h2>
 
-          <p class="entry-meta">
-            Written by {{author}} on
-            <time class="updated" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
-          </p>
-        </header>
+    <div class="row">
+      <div class="columns large-12">
 
-        <div class="entry-content">
-          <hr/>
-          {{{content}}}
-        </div>
+        <article class="hentry">
+          <header>
+            <h2 class="entry-title text-center">{{{ title }}}</h2>
 
-        <div class="social-content">
-          <div id="disqus_block">
-            {{{disqus_snippet}}}
+            <p class="entry-meta">
+              Written by {{author}} on
+              <time class="updated" datetime="{{#iso_date}}{{ published_date }}{{/iso_date}}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
+            </p>
+          </header>
+
+          <div class="entry-content">
+            <hr/>
+            {{{content}}}
           </div>
-        </div>
 
-      </article>
+          <div class="social-content">
+            <div id="disqus_block">
+              {{{disqus_snippet}}}
+            </div>
+          </div>
+
+        </article>
+      </div>
     </div>
 
-  </div>
+  </section>
+</div>
 
-</section>
