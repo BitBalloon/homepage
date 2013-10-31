@@ -8,7 +8,7 @@ At BitBalloon we like to eat our own dog-food, so while our public website start
 
 ![Punch](/img/posts/punch.png)
 
-When you have a somewhat complex site, you'll quickly outgrow a bunch of HTML files, and that's when a static site generator comes in handy. After [looking at a whole bunch of them](http://staticgen.yourwebisonline.com/) we settled on a node.js based generator called [Punch](http://laktek.github.io/punch/).
+When you have a somewhat complex site, you'll quickly outgrow a bunch of HTML files, and that's when a static site generator comes in handy. After [looking at a whole bunch of them](http://staticgen.com) we settled on a node.js based generator called [Punch](http://laktek.github.io/punch/).
 
 Punch lets us use mustache for templating and handles Sass and CoffeeScript for us. When working on the content, we use Markdown with our text editors of choice. 
 
