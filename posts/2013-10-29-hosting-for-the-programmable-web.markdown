@@ -18,7 +18,7 @@ A major part of the problem is web literacy. Thankfully there are people like [K
 
 But beyond education, Internet infrastructure providers also have to make API's more accessible and easier to use. Web hosting is a great example of an industry where there's a lot of room for improvement.
 
-Hosting an API-driven website today is like renting an apartment without utility hookups. Instead of just calling the power company turning on the lights, you basically have to get out your electricians kit and climb up the telephone pole and hook into the power line yourself.
+Hosting an API-driven website today is like renting an apartment without utility hookups. Instead of just calling the power company and turning on the lights, you basically have to get out your electricians kit and climb up the telephone pole and hook into the power line yourself.
 
 ![Line men](/img/linemen.jpg)
 
@@ -26,7 +26,7 @@ It's complicated and potentially dangerous work. Unless you're a lineman, or can
 
 ### Introducing BitBalloon
 
-We're building BitBalloon to change all of that. Our goal is to make it as easy as possible to get sites and apps online that leverage the API's by including the core utilities of the programmable web, out-of-the-box.
+We're building BitBalloon to change all of that. Our goal is to make it as easy as possible to get sites and apps online that leverage API's by including the core utilities of the programmable web, out-of-the-box.
 
 What makes BitBalloon so different from other hosting platforms is that it's "site aware". When you drag and drop a site onto BitBalloon, the first thing that happens is that BitBalloon scans all your files to get an understanding of what you're actually hosting.
 
@@ -42,14 +42,11 @@ The combination of BitBalloon and Zapier means that instead of being forced to f
 
 ### Open Platform
 
-Our mission for creating much more accessible and API-driven hosting platform doesn't end with our end users. BitBalloon's underlying infrastructure is open for other developers to leverage in their own services.
+Our quest for a much more accessible and API-driven hosting platform is just getting started. And it doesn't stop with our direct customers, BitBalloon's underlying infrastructure is open for other programmers to leverage in their own services.
 
-If you're building web authoring tools, you can use BitBalloon's infrastructure to empower your users with "site aware", API-backed web publishing using your own brand!
+If you're building web authoring tools, you can use BitBalloon's infrastructure to empower your users with "site aware", API-backed web publishing under your own brand.
 
-
-
-
-
+We'd love to hear what you think of all this, and can't wait to see you build with BitBalloon and the programmable web!
 
 
 
