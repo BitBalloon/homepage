@@ -1,11 +1,21 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>BitBalloon - Programmable HTML5 Hosting</title>
-		{{#stylesheet_bundle}}/css/all.css{{/stylesheet_bundle}}
-    <meta name="description" content="The complete hosting & deployment platform for static sites">
+    {{#is_post}}
+      <title>{{title}}</title>
+      <meta name="description" content="{{description}}">
 
-    <meta property="og:image" content="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/36e8c018-1228-4717-a0e9-028457741552/balloonbot.png"/>
+      <meta property="og:image" content="{{#image}}{{image}}{{/image}}{{^image}}http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/36e8c018-1228-4717-a0e9-028457741552/balloonbot.png{{/image}}"/>
+    {{/is_post}}
+
+    {{^is_post}}
+      <title>BitBalloon - Programmable HTML5 Hosting</title>
+      <meta name="description" content="The complete hosting & deployment platform for static sites">
+
+      <meta property="og:image" content="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/36e8c018-1228-4717-a0e9-028457741552/balloonbot.png"/>
+    {{/is_post}}
+
+    {{#stylesheet_bundle}}/css/all.css{{/stylesheet_bundle}}
 
   </head>
   <body>

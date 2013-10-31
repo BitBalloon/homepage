@@ -1,6 +1,8 @@
 ---
 title: Building and Deploying BitBalloon.com with Travis CI and Punch
 author: Mathias Biilmann
+description: Setting up Continuous Deployments with GitHub, Travis CI and BitBalloon
+image: /img/posts/continuous-deployment.png
 published: true
 ---
 
