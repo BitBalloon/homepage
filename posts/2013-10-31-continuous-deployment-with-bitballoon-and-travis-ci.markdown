@@ -51,10 +51,37 @@ Some things to pay attention to:
 We obviously don't want to expose our bitballoon access_token for all the world to see. Travis lets you encrypt variables. Running `travis encrypt BB_ACCESS_TOKEN=secrettoken` will output a string you can use to set an encrypted environment variable.
 
 ### before_install
-We use the BitBalloon ruby gem, so we need to install that. All other dependencies are installed automatically by Travis with `npm install`. Once our [node.js client](https://github.com/BitBalloon/bitballoon-js) we plan on a punch plugin to handle the deploy.
+We use the BitBalloon ruby gem, so we need to install that. All other dependencies are installed automatically by Travis with `npm install`.
 
 ### after_success 
-This is where the magic happens. If the build is successfull, we'll deploy the newly created output dir with bitballoon.
+This is where the magic happens. If the build is successfull, we'll deploy the newly created output dir with bitballoon. BitBalloon deploys are atomic, so we're guaranteed that our site won't be left hanging in a broken state if the Travis VM should go dowm in the middle of the deploy or loose network access.
 
-All in all this makes for a great way to collaborate and work on our public website. We work in branches whenever we make changes, and as soon as we push to master, Travis will go to work, do a clean build and launch the new version of our site.
+![Continuous Deployment](/img/posts/continuous-deployment.png)
+
+All in all this makes for a great way to collaborate and work on our public website. We work in branches whenever we make changes, and as soon as we push to master, Travis will go to work, do a clean build and launch the new version of our site. 
+
+We're just about to open up access to BitBalloon API keys to everybody. If you want to get continuous deployment setup for your own static site or one-page app, either <a href="#" data-reveal-id="contact">contact us</a> for early access or sign up to get notified once we open up the flood-gates.
+
+<div class="mailchimp-form large-12">
+  <!-- Begin MailChimp Signup Form -->
+  <div id="mc_embed_signup">
+    <form action="http://webpop.us2.list-manage1.com/subscribe/post?u=3ca88a0cd26d026e590224d67&amp;id=e52baf3348" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div class="mc-field-group">
+      <label for="mce-EMAIL">Email Address</label>
+      <div class="row collapse one-line-submit">
+        <div class="large-6 columns">
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" autofocus="autofocus">
+        </div>
+        <div class="large-6 columns">
+            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+        </div>
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
 
