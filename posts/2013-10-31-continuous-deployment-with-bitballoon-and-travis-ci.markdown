@@ -1,5 +1,5 @@
 ---
-title: Building and Deploying BitBalloon.com with Travis CI and Punch 
+title: Building and Deploying BitBalloon.com with Travis CI and Punch
 author: Mathias Biilmann
 published: true
 ---
@@ -10,7 +10,7 @@ At BitBalloon we like to eat our own dog-food, so while our public website start
 
 When you have a somewhat complex site, you'll quickly outgrow a bunch of HTML files, and that's when a static site generator comes in handy. After [looking at a whole bunch of them](http://staticgen.com) we settled on a node.js based generator called [Punch](http://laktek.github.io/punch/).
 
-Punch lets us use mustache for templating and handles Sass and CoffeeScript for us. When working on the content, we use Markdown with our text editors of choice. 
+Punch lets us use mustache for templating and handles Sass and CoffeeScript for us. When working on the content, we use Markdown with our text editors of choice.
 
 We host the repository for bitballoon.com as an open-source project on [GitHub](https://github.com/BitBalloon/homepage), so if you spot a typo in this post, feel free to fork and send a pull request.
 
@@ -53,12 +53,12 @@ We obviously don't want to expose our bitballoon access_token for all the world 
 ### before_install
 We use the BitBalloon ruby gem, so we need to install that. All other dependencies are installed automatically by Travis with `npm install`.
 
-### after_success 
-This is where the magic happens. If the build is successfull, we'll deploy the newly created output dir with bitballoon. BitBalloon deploys are atomic, so we're guaranteed that our site won't be left hanging in a broken state if the Travis VM should go dowm in the middle of the deploy or loose network access.
+### after_success
+This is where the magic happens. If the build is successfull, we'll deploy the newly created output dir with bitballoon. BitBalloon deploys are atomic, so we're guaranteed that our site won't be left hanging in a broken state if the Travis VM should go down in the middle of the deploy or loses network access.
 
 ![Continuous Deployment](/img/posts/continuous-deployment.png)
 
-All in all this makes for a great way to collaborate and work on our public website. We work in branches whenever we make changes, and as soon as we push to master, Travis will go to work, do a clean build and launch the new version of our site. 
+All in all this makes for a great way to collaborate and work on our public website. We work in branches whenever we make changes, and as soon as we push to master, Travis will go to work, do a clean build and launch the new version of our site.
 
 We're just about to open up access to BitBalloon API keys to everybody. If you want to get continuous deployment setup for your own static site or one-page app, either <a href="#" data-reveal-id="contact">contact us</a> for early access or sign up to get notified once we open up the flood-gates.
 
