@@ -4,7 +4,7 @@ author: Mathias Biilmann
 published: true
 ---
 
-At BitBalloon we like to eat our own dog-food, so while our public website started out at just a part of our Rails application, we always wanted to build it as a static site and host it with BitBalloon.
+At BitBalloon we like to eat our own dog-food, so while our public website started out as just a part of our Rails application, we always wanted to build it as a static site and host it with BitBalloon.
 
 ![Punch](/img/posts/punch.png)
 

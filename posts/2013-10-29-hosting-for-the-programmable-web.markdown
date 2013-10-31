@@ -4,19 +4,19 @@ author: Michael Ruescher
 published: true
 ---
 
-If you're building something web-based, you've probably heard about these things called API's, maybe you're even actively using them to achieve your goals.
+If you're building something web-based, you've probably heard about these things called APIs, maybe you're even actively using them to achieve your goals.
 
-API's give you incredible **leverage**. The worlds most powerful algorithms in weather prediction or facial recognition are at your fingertips without any upfront capital investment on your part.
+APIs give you incredible **leverage**. The worlds most powerful algorithms in weather prediction or facial recognition are at your fingertips without any upfront capital investment on your part.
 
-But most people, even those who know how to put together basic website, don't know how to use API's because authenticating and interfacing with them is too big of a technical hurdle.
+But most people, even those who know how to put together basic website, don't know how to use APIs because authenticating and interfacing with them is too big of a technical hurdle.
 
 It's a real shame. If we can solve this problem, we're bound to see an explosion of creativity.
 
 ![Mind Blown](/img/mindblown.gif)
 
-A major part of the problem is web literacy. Thankfully there are people like [Kin Lane](http://apievangelist.com/) who are helping to educate the world about API's and why they matter.
+A major part of the problem is web literacy. Thankfully there are people like [Kin Lane](http://apievangelist.com/) who are helping to educate the world about APIs and why they matter.
 
-But beyond education, Internet infrastructure providers also have to make API's more accessible and easier to use. Web hosting is a great example of an industry where there's a lot of room for improvement.
+But beyond education, Internet infrastructure providers also have to make APIs more accessible and easier to use. Web hosting is a great example of an industry where there's a lot of room for improvement.
 
 Hosting an API-driven website today is like renting an apartment without utility hookups. Instead of just calling the power company and turning on the lights, you basically have to get out your electricians kit and climb up the telephone pole and hook into the power line yourself.
 
@@ -26,7 +26,7 @@ It's complicated and potentially dangerous work. Unless you're a lineman, or can
 
 ### Introducing BitBalloon
 
-We're building BitBalloon to change all of that. Our goal is to make it as easy as possible to get sites and apps online that leverage API's by including the core utilities of the programmable web, out-of-the-box.
+We're building BitBalloon to change all of that. Our goal is to make it as easy as possible to get sites and apps online that leverage APIs by including the core utilities of the programmable web, out-of-the-box.
 
 What makes BitBalloon so different from other hosting platforms is that it's "site aware". When you drag and drop a site onto BitBalloon, the first thing that happens is that BitBalloon scans all your files to get an understanding of what you're actually hosting.
 
