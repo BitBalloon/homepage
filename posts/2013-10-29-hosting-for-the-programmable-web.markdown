@@ -16,7 +16,7 @@ It's a real shame. If we can solve this problem, we're bound to see an explosion
 
 A major part of the problem is web literacy. Thankfully there are people like [Kin Lane](http://apievangelist.com/) who are helping to educate the world about API's and why they matter.
 
-But beyond education, Internet infrastructure providers also have to make API's more accessible and easier to use. Web hosting is a great example of an industry where there is a lot of opportunity to move the programmable web forward.
+But beyond education, Internet infrastructure providers also have to make API's more accessible and easier to use. Web hosting is a great example of an industry where there's a lot of room for improvement.
 
 Hosting an API-driven website today is like renting an apartment without utility hookups. Instead of just calling the power company turning on the lights, you basically have to get out your electricians kit and climb up the telephone pole and hook into the power line yourself.
 
