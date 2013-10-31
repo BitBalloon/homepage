@@ -2,6 +2,7 @@
 title: Hosting for the Programmable Web
 author: Michael Ruescher
 published: true
+description: How BitBalloon helps lower the barrier of entry to success in the API Economy.
 ---
 
 If you're building something web-based, you've probably heard about these things called APIs, maybe you're even actively using them to achieve your goals.
