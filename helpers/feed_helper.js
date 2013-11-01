@@ -58,7 +58,7 @@ module.exports = {
   get: function(basepath, file_extension, options, callback){
     var self = this;
 
-    if (!path_utils.matchPath(basepath, "^/feed$")) {
+    if (!path_utils.matchPath(basepath, "^blog/feed$")) {
       return callback(null, {}, {}, null);
     }
 
