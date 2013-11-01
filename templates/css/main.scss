@@ -264,34 +264,47 @@
 }
 
 .reasons {
-  .one {
-    h4 { margin-top: 1em; }
+  .large-3 {
+    img {
+      display: block;
+      width: 11em;
+    }
+    .node {
+      width: 10em;
+      margin: 2em auto .5em;
+      padding-left: .4em;
+    }
+    .ruby {
+      width: 8em;
+      margin: 1.5em auto .5em;
+    }
+    .rackspace {
+      margin: 2em auto 1.2em;
+    }
+    .akamai {
+      margin: 1em auto 2.5em;
+    }
   }
   h1 {
     margin: .5em 0 1.5em;
   }
-  h4 {
+  h3 {
     margin-top: 1.5em;
   }
-  i {
-    color: #114086;
+  p { font-size: 20px; }
+  .icon-dna {
+    color: rgb(255, 255, 255);
     border-radius: 100%;
     display: block;
     text-align: center;
-    font-size: 80px;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    margin: .35em auto .6em;
-    background: #FCFCFC;
-    box-shadow: 0 0 0 20px #F7F7F7;
-    &.icon-signal {
-      font-size: 95px;
-    }
-    &.icon-speedometer {
-      font-size: 62px;
-      line-height: 110px;
-    }
+    font-size: 91px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    margin: 0.4em auto 0.6em;
+    background: rgb(39, 39, 255);
+    box-shadow: 0 0 0 7px rgb(223, 236, 255);
+    background-image: radial-gradient(at 65% 55%, rgb(44, 166, 248) 0%, rgb(37, 83, 189) 150%);
   }
   pre {
     display: inline-block;
