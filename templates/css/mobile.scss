@@ -42,7 +42,14 @@
     .large-3 {
       img, i { margin-bottom: 0 !important; }
     }
-    p, pre { max-width: 30em; margin: 0 auto 1.7em; }
+    pre {
+      float: none;
+      display: block;
+      margin: 1em auto 0;
+      max-width: 20em;
+    }
+    p { margin: 0 auto 1.7em; max-width: 30em; }
+    .node { margin: 0 1em 0 0; }
   }
 
   header nav .navlink { display: none !important; }

@@ -264,26 +264,17 @@
 }
 
 .reasons {
-  .large-3 {
-    img {
-      display: block;
-      width: 11em;
-    }
-    .node {
-      width: 10em;
-      margin: 2em auto .5em;
-      padding-left: .4em;
-    }
-    .ruby {
-      width: 8em;
-      margin: 1.5em auto 1.5em;
-    }
-    .rackspace {
-      margin: 2.05em auto 1.2em;
-    }
-    .akamai {
-      margin: 1em auto 3em;
-    }
+  .hosting-partners {
+    img { position: relative; top: -.5em }
+  }
+  .rackspace {
+    width: 8em;
+    vertical-align: bottom;
+  }
+  .akamai {
+    width: 7em;
+    margin: 0 1em;
+    vertical-align: bottom;
   }
   h1 {
     margin: .5em 0 1.5em;
@@ -292,26 +283,43 @@
     margin-top: 1.5em;
   }
   p { font-size: 20px; }
-  .icon-dna {
+  i {
     color: rgb(255, 255, 255);
     border-radius: 100%;
     display: block;
     text-align: center;
-    font-size: 91px;
+    font-size: 70px;
     width: 130px;
     height: 130px;
     line-height: 130px;
-    margin: 0.4em auto 0.6em;
     background: rgb(39, 39, 255);
     box-shadow: 0 0 0 7px rgb(223, 236, 255);
     background-image: radial-gradient(at 65% 55%, rgb(44, 166, 248) 0%, rgb(37, 83, 189) 150%);
   }
+  .icon-code {
+    margin: .7em auto .9em;
+  }
+  .icon-atomic {
+    margin: 1em auto 1.2em;
+  }
+  .icon-dna {
+    margin: 0.55em auto 0.65em;
+  }
   pre {
+    float: left;
     display: inline-block;
     code {
       padding-right: 1.6em;
       margin: -1.2em 0 0 0;
     }
+  }
+  .node {
+    width: 7em;
+    margin: 0 2em;
+  }
+  .ruby {
+    width: 3.5em;
+    margin-top: -.1em;
   }
 }
 
