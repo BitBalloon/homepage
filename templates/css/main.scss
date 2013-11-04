@@ -264,6 +264,9 @@
 }
 
 .reasons {
+  > .row > .large-7 {
+    padding-bottom: 2em;
+  }
   .hosting-partners {
     img { position: relative; top: -.5em }
   }
