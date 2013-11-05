@@ -12,7 +12,7 @@
     margin: -8px auto 0;
     position: relative;
   }
-  .headline { font-size: 25px; color: #9B9B9d; font-weight: 200;  margin-top: 20px; }
+  .headline { font-size: 25px; color: #9B9B9d; font-weight: 200; }
   &.round { border-radius: 5px; }
 }
 
@@ -239,23 +239,26 @@
     transition: background .15s ease-out;
     color: #fff;
     display: block;
-    border: 3px solid white;
+    border: 2px solid white;
     background: transparent;
     margin-bottom: 3em;
     &:hover {
-      background: rgba(45, 104, 173, 0.56);
+      background: #fff;
+      color: rgb(1, 149, 219);
     }
   }
   .signed-in-cta {
     display: none;
   }
   .dashed-box {
-    border-color: rgba(177, 209, 245, 1);
+    border-color: #fff;
+    border-width: 3px;
     padding: 3em 0.2em 3em;
     margin: 2.2em auto 1em;
     text-align: center;
+    opacity: 0.8;
     i {
-      color: rgba(244, 249, 255, 0.71);
+      color: #fff;
       font-size: 130px;
     }
     .headline {
@@ -264,8 +267,7 @@
       max-width: 14em;
       font-weight: normal;
       margin: 1em auto 0;
-      color: #F4F9FF;
-      color: rgba(244, 249, 255, 0.88);
+      color: #fff;
     }
   }
 
@@ -288,7 +290,7 @@
     vertical-align: bottom;
   }
   h1 {
-    margin: .5em 0 1.5em;
+    margin: 1em 0 1.5em;
   }
   h3 {
     margin-top: 1.5em;
