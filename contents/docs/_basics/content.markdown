@@ -1,14 +1,14 @@
 ## The Basics
 
 
-BitBalloon is first and foremost an API for deploying static sites onto the programmable web. There's two ways to deploy: dragging a site onto the dropzone or by making an API call.
+BitBalloon is first and foremost an API for deploying static sites onto the programmable web. There's two ways to deploy: dragging a site onto the drop-zone or by making an API call.
 
 Either way, the deployment is an automated process where BitBalloon analyzes your site, optimizes the assets and deploys it onto highly scalable, programmable hosting.
 
 When you first deploy a site, a URL gets generated for it, similar in format to:<br/> http://cowboy-system-73843.bitballoon.com
 
 <div class="panel">
-This overview covers the features which are exposed in the UI. Read up on the <a href="/docs/api#sites">API</a> to learn about driving the BitBalloon programmatically.
+This overview covers the features which are exposed in the UI. Read up on the <a href="/docs/api#sites">API</a> to learn about driving the BitBalloon pro grammatically.
 </div>
 
 ### Site Management
@@ -22,7 +22,7 @@ Each site has a set of admin tools for managing the:
 * deploys
 * code snippets
 
-The admin tools can be accessed from a private dashboard at a url similar to:
+The admin tools can be accessed from a private dashboard at a URL similar to:
 https://www.bitballoon.com/sites/cowboy-sysxtem-73843
 
 ### Form Handling
@@ -50,4 +50,4 @@ Code snippets can be injected into the footer of every page of a site. The snipp
 
 ### Versions
 
-Every time a site is updated in any way, a new version is created. Deployment history is accessible from the site dashboard and you can restore any version to represtent your live site at any time.
+Every time a site is updated in any way, a new version is created. Deployment history is accessible from the site dashboard and you can restore any version to represent your live site at any time.
