@@ -216,8 +216,7 @@
   text-align: center;
 }
 
-.dropzone.drop-target .cloud-icon,
-.dropzone.processing .cloud-working-icon,
+.drag .cloud-icon,
 .drag .redeploy-cloud {
   -webkit-animation-delay: 0s;
   -webkit-animation-duration: 0.2s, 0.3s;
