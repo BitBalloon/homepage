@@ -29,6 +29,10 @@
 @media #{$medium-small} {
   .home-hero {
     text-align: center;
+    h2 {
+      margin-top: .5em;
+    }
+    .dashed-box { display: none; }
     .lead {
       margin: 0 auto 1.2em;
     }
@@ -89,7 +93,29 @@
   }
 
   .sky {
-    padding-bottom: 4em;
+    padding-bottom: 1em 1em 4em;
+  }
+  .home-hero {
+    h2 {
+      margin: .4em auto;
+      font-size: 2em;
+    }
+    .lead {
+      font-size: 1.3em;
+    }
+  }
+  header .main-nav {
+    margin-top: .3em
+  }
+  .inline-list.inline-blocks li {
+    display: block;
+    display: none !important;
+  }
+  .right {
+    float: left !important;
+  }
+  .inline-list.inline-blocks li:last-of-type {
+    display: block !important;
   }
 
   .dropzone .headline {

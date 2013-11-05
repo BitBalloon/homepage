@@ -1,4 +1,9 @@
 
+.high-orbit {
+  background: url("/img/stratosphere1.jpg");
+  background-size: cover;
+}
+
 .dashed-box {
   border: 2px dashed #9B9B9d;
   margin: 0;
@@ -16,7 +21,7 @@
   position: relative;
   overflow: hidden;
   // border: 4px dashed #3892E3;
-  padding: 20px 40px;
+  padding: 60px 40px 130px;
   margin: 10px -40px 20px;
   h1, h2, h3, h4, h5, h6, p {
     color: #fff;
@@ -224,7 +229,7 @@
     max-width: 24em;
   }
   .sign-up-button {
-    border-radius: 3px;
+    border-radius: 5px;
     padding: .7em 1em;
     width: 14em;
     text-align: center;
@@ -234,12 +239,11 @@
     transition: background .15s ease-out;
     color: #fff;
     display: block;
-    background: #6BB6F5;
-    background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 100%);
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    border: 3px solid white;
+    background: transparent;
     margin-bottom: 3em;
     &:hover {
-      background: linear-gradient(to bottom, #B2D2F8 0%,#3C89C9 150%);
+      background: rgba(45, 104, 173, 0.56);
     }
   }
   .signed-in-cta {
@@ -247,10 +251,13 @@
   }
   .dashed-box {
     border-color: rgba(177, 209, 245, 1);
-    padding: 3.5em 0.2em 4.2em;
-    margin: 1.2em auto 1em;
+    padding: 3em 0.2em 3em;
+    margin: 2.2em auto 1em;
     text-align: center;
-    i { color: #F4F9FF;}
+    i {
+      color: rgba(244, 249, 255, 0.71);
+      font-size: 130px;
+    }
     .headline {
       font-size: 1.5em;
       line-height: 1.5em;
@@ -258,6 +265,7 @@
       font-weight: normal;
       margin: 1em auto 0;
       color: #F4F9FF;
+      color: rgba(244, 249, 255, 0.88);
     }
   }
 
@@ -318,7 +326,7 @@
   }
   .node {
     width: 7em;
-    margin: 0 2em;
+    margin: 0 2em 0 2.5em;
   }
   .ruby {
     width: 3.5em;
