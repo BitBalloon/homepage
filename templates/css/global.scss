@@ -53,6 +53,11 @@ pre {
     padding: .7em 1em .5em;
   }
 }
+.prettyprint {
+  margin-bottom: 26px;
+  line-height: 1.2;
+  overflow: scroll;
+}
 
 .visually-hidden { visibility: hidden; }
 
@@ -105,11 +110,7 @@ textarea {
   min-height: 95px;
   &.copy-this { height: 10em; }
 }
-.prettyprint {
-  margin-bottom: 26px;
-  line-height: 1.2;
-  overflow: scroll;
-}
+
 .panel {
   background: rgb(252,252,254);
   border-radius: 3px;
@@ -132,14 +133,6 @@ textarea {
   }
 }
 .panel p, .panel ul, .panel li, .panel h1, .panel h2, .panel h3, .panel h4, .panel h5 { color: rgb(22, 49, 73); }
-
-.sky {
-  background: #2553bd;
-  background-image: -webkit-radial-gradient(65% 55%, #2ca6f8 0%, #2553bd 150%);
-  background-image:    -moz-radial-gradient(65% 55%, #2ca6f8 0%, #2553bd 150%);
-  background-image:     -ms-radial-gradient(65% 55%, #2ca6f8 0%, #2553bd 150%);
-  background-image:         radial-gradient(at 65% 55%, #2ca6f8 0%, #2553bd 150%);
-}
 
 .info-bar {
   border-top: 1px solid #e8ebee;
@@ -179,10 +172,6 @@ article + article {
   font-weight: 900;
   margin-bottom: 50px;
   text-shadow: 2px 2px rgba(0,0,0,0.2);
-}
-
-.push-down {
-  margin-top: 40px;
 }
 
 .button {
@@ -254,7 +243,6 @@ button.secondary, .button.secondary {
 }
 
 
-.subdued { color: rgb(145, 151, 158) }
 
 // Form field for tricking bots - don't display to humans
 .bot-field { display: none; }
@@ -320,10 +308,161 @@ header {
   }
 }
 
+/******** USER AUTHENTICATION STATE *********/
+
+#logout-button { display: none; }
+#login-button  { display: block; }
+.logged-in {
+  #login-button { display: none; }
+  #logout-button { display: block; }
+  .signed-in-cta { display: block; }
+  .sign-up-button { display: none; }
+}
 
 
-/******** TOOLTIPS ************************/
+/******** TOOLTIPS ******************* *****/
+
 .tooltip {
   > .nub { top: -9px; }
 }
+
+/******** DEPLOYMENT ************************/
+
+.dashed-box {
+  border: 2px dashed #9B9B9d;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  .icon-cloud-upload {
+    margin: -8px auto 0;
+    position: relative;
+  }
+  .headline { font-size: 25px; color: #9B9B9d; font-weight: 200; }
+}
+
+/******** NAV *******************************/
+
+.nav-link {
+  display: block;
+  padding: 5px 10px;
+  background: #f9f9fb;
+  border-radius: 3px;
+  .label {
+    margin: 0;
+    font-size: 16px;
+  }
+  .count {
+    float: right;
+    border-radius: 10px;
+    background: #efeff1;
+    font-weight: normal;
+    padding: 0 7px;
+    border: 1px solid #dddddf;
+    margin-top: 7px;
+  }
+  .meta {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  ul {
+    list-style: none;
+    position: absolute;
+    top: 25px;
+    left: -15px;
+    z-index: 1;
+    background: #191919;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    color: #fff;
+    display: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+  }
+  ul:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    margin-left: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(47,47,47);
+  }
+  &:hover ul {
+    display: block;
+  }
+  li a {
+    display: block;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #efefef;
+    width: 9.5em;
+    top: 18px;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  li a:hover {
+    background: rgba(255,255,255,0.15);
+    text-decoration: none;
+  }
+}
+
+
+.tabs {
+  margin: 0 0 20px 0px;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  border-bottom: 1px solid #efefef;
+  li {
+    float: left;
+    margin: 0;
+    a {
+      color: #163149;
+      display: block;
+      min-width: 8em;
+      text-align: center;
+      padding: 10px 10px 6px;
+      font-size: 14px;
+    }
+    &.active a {
+      background: #efefef;
+      font-weight: bold;
+    }
+    &.premium-link a {
+      color: #2d72d9;
+      text-align: right;
+      padding-right: 1px;
+    }
+  }
+}
+
+/******** LAYOUT *******************************/
+
+
+.sheet {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  padding: 20px 20px 40px;
+  margin-top: 20px;
+  header {
+    margin: 0 0 30px;
+    padding: 0;
+    position: relative;
+  }
+  article + article {
+    margin-top: 30px;
+  }
+  &.wide-margins {
+    padding: 20px 40px;
+  }
+}
+
 
