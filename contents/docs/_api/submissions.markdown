@@ -8,7 +8,7 @@ The `/submissions` endpoint gives access to the form submissions of your BitBall
 
 * `GET /submissions` will return a list of form submissions
 
-```json
+```javascript
 [
   {
     "id":"5231110b5803540aeb000019",

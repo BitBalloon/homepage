@@ -9,7 +9,7 @@ Snippets are code snippets that will be injected into every HTML page of the web
 
 * `GET /sites/{site_id}/snippets` get a list of snippets specific to this site (a reseller may set global snippets that won't be included in this list)
 
-```json
+```javascript
 [
   {
     "id":0,
@@ -30,7 +30,7 @@ The `goal` property is the code that will be injected into the "Thank you" page 
 
 * `GET /sites/{site_id}/snippets/{snippet_id}` get a specific snippet
 
-```json
+```javascript
 {
   "id":0,
   "title":"Test",

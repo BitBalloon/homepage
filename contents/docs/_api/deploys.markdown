@@ -7,7 +7,7 @@ You can access all deploys for a specific site.
 
 * `GET /sites/{site_id}/deploys` a list of all deploys
 
-```json
+```javascript
 [
   {
     "id":"52465f435803544542000001",
@@ -32,7 +32,7 @@ You can access all deploys for a specific site.
 
 * `GET /sites/{site_id}/deploys/{deploy_id}` a specific deploy
 
-```json
+```javascript
 {
   "id":"52465f435803544542000001",
   "premium":false,
@@ -54,7 +54,7 @@ You can access all deploys for a specific site.
 
 * `POST /sites/{site_id}/deploys/{deploy_id}/restore` restore an old deploy and make it the live version of the site
 
-```json
+```javascript
 {
   "id":"52465f435803544542000001",
   "premium":false,

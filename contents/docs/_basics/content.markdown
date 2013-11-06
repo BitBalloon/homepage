@@ -33,7 +33,7 @@ You can export form data and setup email notifications of new submissions in the
 
 For best results, set name attributes on the form and it's inputs, like so:
 
-```html
+```markup
 <form name="signup">
   First Name: <input type="text" name="first_name">
   Email: <input type="email" name="email">

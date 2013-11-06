@@ -7,7 +7,7 @@ All files deployed by BitBalloon can be read, updated and deleted through the AP
 
 * `GET /sites/{site_id}/files` will return a list of all the files in the current deploy
 
-```json
+```javascript
 [
   {"id":"/index.html",
   "path":"/index.html",

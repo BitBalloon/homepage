@@ -18,14 +18,14 @@ You'll need an application client id and a client secret before you can access t
 
 Once you have your credentials you can instantiate a BitBalloon client.
 
-```js
+```javascript
 var bitballoon = require("bitballoon"),
     client     = bitballoon.createClient(options);
 ```
 
 Typically you'll have an `access_token` stored that you want to instantiate the client with:
 
-```
+```javascript
 var client = bitballoon.createClient({access_token: "my-access-token"});
 ```
 
@@ -36,7 +36,7 @@ A client need an access token before it can make requests to the BitBalloon API.
 
 The first method is the simplest, and works when you don't need to authenticate on behalf of some other user:
 
-```js
+```javascript
 var client = bitballoon.createClient({client_id: CLIENT_ID, client_secret: CLIENT_SECRET});
 
 client.authorizeFromCredentials(function(err, access_token) {
@@ -48,7 +48,7 @@ client.authorizeFromCredentials(function(err, access_token) {
 ```
 To authorize on behalf of a user, you first need to send the user to a BitBalloon url where she'll be asked to grant your application permission. Once the user has visited that URL, she'll be redirected back to a redirect URI you specify (this must match the redirect URI on file for your Application). When the user returns to your app, you'll be able to access a `code` query parameter, that you can use to obtain the final `access_token`
 
-```js
+```javascript
 var client = bitballoon.createClient({
   client_id: CLIENT_ID,
   client_secret: CLIENT_SECRET,
@@ -72,7 +72,7 @@ Sites
 
 Getting a list of all sites you have access to:
 
-```js
+```javascript
 client.sites(function(err, sites) {
   // do work
 });
@@ -80,7 +80,7 @@ client.sites(function(err, sites) {
 
 Getting a specific site by id:
 
-```js
+```javascript
 client.site(id, function(err, site) {
   // do work
 })
@@ -88,7 +88,7 @@ client.site(id, function(err, site) {
 
 Creating a site from a directory (requires node):
 
-```js
+```javascript
 client.createSite({dir: "/tmp/my-site"}, function(err, site) {
   // do work
 });
@@ -96,7 +96,7 @@ client.createSite({dir: "/tmp/my-site"}, function(err, site) {
 
 Creating a site from a zip file (requires node):
 
-```js
+```javascript
 client.createSite({zip: "/tmp/my-site.zip"}, function(err, site) {
   // do work
 });
@@ -104,7 +104,7 @@ client.createSite({zip: "/tmp/my-site.zip"}, function(err, site) {
 
 Both methods will create the site and upload the files. The site will then be processing.
 
-```js
+```javascript
 client.createSite({zip: "/tmp-my-site.zip"}, function(err, site) {
   site.state == "processing"
 });
@@ -112,7 +112,7 @@ client.createSite({zip: "/tmp-my-site.zip"}, function(err, site) {
 
 Refresh a site to update the state:
 
-```js
+```javascript
 site.refresh(function(err, site) {
   console.log(site.state);
 });
@@ -120,7 +120,7 @@ site.refresh(function(err, site) {
 
 Use `waitForReady` to wait until a site has finished processing.
 
-```js
+```javascript
 client.createSite({zip: "/tmp-my-site.zip"}, function(err, site) {
   site.waitForReady(function(err, site) {
     if (err) return console.log("Error deploying site %o", err);
@@ -131,7 +131,7 @@ client.createSite({zip: "/tmp-my-site.zip"}, function(err, site) {
 
 Redeploy a site from a dir:
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error finding site %o", err);
   site.update({dir: "/tmp/my-site"}, function(err, site) {
@@ -161,7 +161,7 @@ client.site(id, function(err, site) {
 
 Update the name of the site (its subdomain), the custom domain and the notification email for form submissions:
 
-```js
+```javascript
 site.update({name: "my-site", customDomain: "www.example.com", notificationEmail: "me@example.com", password: "secret"}, function(err, site) {
   if (err) return console.log("Error updating site %o", err);
   console.log("Updated site");
@@ -170,7 +170,7 @@ site.update({name: "my-site", customDomain: "www.example.com", notificationEmail
 
 Deleting a site:
 
-```js
+```javascript
 site.destroy(function(err) {
   if (err) return console.log("Error deleting site");
   console.log("Site deleted");
@@ -182,7 +182,7 @@ Forms
 
 Access all forms you have access to:
 
-```js
+```javascript
 client.forms(function(err, forms) {
   // do work
 })
@@ -190,7 +190,7 @@ client.forms(function(err, forms) {
 
 Access forms for a specific site:
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.forms(function(err, forms) {
@@ -201,7 +201,7 @@ client.site(id, function(err, site) {
 
 Access a specific form:
 
-```js
+```javascript
 client.form(id, function(err, form) {
   if (err) return console.log("Error getting form %o", err);
   // do work
@@ -210,7 +210,7 @@ client.form(id, function(err, form) {
 
 Access a list of all form submissions you have access to:
 
-```js
+```javascript
 client.submissions(function(err, submissions) {
   if (err) return console.log("Error getting submissions %o", err);
   // do work
@@ -219,7 +219,7 @@ client.submissions(function(err, submissions) {
 
 Access submissions from a specific site
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.submissions(function(err, submissions) {
@@ -231,7 +231,7 @@ client.site(id, function(err, site) {
 
 Access submissions from a specific form
 
-```js
+```javascript
 client.form(id, function(err, form) {
   if (err) return console.log("Error getting form %o", err);
   form.submissions(function(err, submissions) {
@@ -243,7 +243,7 @@ client.form(id, function(err, form) {
 
 Get a specific submission
 
-```js
+```javascript
 client.submission(id, function(err, submission) {
   if (err) return console.log("Error getting submission %o", err);
   // do work
@@ -255,7 +255,7 @@ Files
 
 Access all files in a site:
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.files(function(err, files) {
@@ -267,7 +267,7 @@ client.site(id, function(err, site) {
 
 Get a specific file:
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.file(path, function(err, file) {
@@ -291,7 +291,7 @@ Deploys
 
 Access all deploys for a site
 
-```js
+```javascript
 site.deploys(function(err, deploys) {
   // do work
 });
@@ -299,7 +299,7 @@ site.deploys(function(err, deploys) {
 
 Access a specific deploy
 
-```js
+```javascript
 site.deploy(id, function(err, deploy) {
   // do work
 });
@@ -307,7 +307,7 @@ site.deploy(id, function(err, deploy) {
 
 Restore a deploy (makes it the current live version of the site)
 
-```js
+```javascript
 site.deploy(id, function(err, deploy) {
   if (err) return console.log(err);
   deploy.restore(function(err, deploy) {
@@ -321,7 +321,7 @@ Snippets
 
 Snippets are small code snippets injected into all HTML pages of a site right before the closing head or body tag. To get all snippets for a site:
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.snippets(function(err, snippets) {
@@ -333,7 +333,7 @@ client.site(id, function(err, site) {
 
 Get a specific snippet
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.snippet(snippetId, function(err, snippet) {
@@ -347,7 +347,7 @@ Add a snippet to a site
 
 You can specify a `general` snippet that will be inserted into all pages, and a `goal` snippet that will be injected into a page following a successful form submission. Each snippet must have a title. You can optionally set the position of both the general and the goal snippet to `head` or `footer` to determine if it gets injected into the head tag or at the end of the page.
 
-```js
+```javascript
 client.site(id, function(err, site) {
   if (err) return console.log("Error getting site %o", err);
   site.createSnippet({
@@ -365,7 +365,7 @@ client.site(id, function(err, site) {
 
 Update a snippet
 
-```js
+```javascript
 snippet.update({
   general: "<script>alert('Hello')</script>",
   general_position: "head",
@@ -380,7 +380,7 @@ snippet.update({
 
 Delete a snippet
 
-```js
+```javascript
 snippet.destroy(function(err) {
   if (err) return console.log("Error deleting snippet");
   console.log("Snippet deleted");
@@ -394,7 +394,7 @@ The user methods are mainly useful for resellers. Creating, deleting and updatin
 
 Getting a list of users
 
-```js
+```javascript
 client.users(function(err, users) {
   // do work
 });
@@ -402,7 +402,7 @@ client.users(function(err, users) {
 
 Getting a specific user
 
-```js
+```javascript
 client.user(id, function(err, user) {
   // do work
 });
@@ -410,7 +410,7 @@ client.user(id, function(err, user) {
 
 Creating a new user (`email` is required, `uid` is optional. Both must be unique)
 
-```js
+```javascript
 client.createUser({email: "user@example.com", uid: "12345"}, function(err, user) {
   if (err) return console("Error creating user");
   console.log(user);
@@ -419,7 +419,7 @@ client.createUser({email: "user@example.com", uid: "12345"}, function(err, user)
 
 Updating a user
 
-```js
+```javascript
 client.user(id, function(err, user) {
   if (err) return console.log("Error getting user");
   user.update({email: "user@example.com", uid: "12345"}, function(err, user) {
@@ -431,7 +431,7 @@ client.user(id, function(err, user) {
 
 Deleting a user
 
-```js
+```javascript
 client.user(id, function(err, user) {
   if (err) return console.log("Error getting user");
   user.destroy(function(err) {
@@ -442,7 +442,7 @@ client.user(id, function(err, user) {
 
 Getting sites belonging to a user
 
-```js
+```javascript
 client.user(id, function(err, user) {
   if (err) return console.log("Error getting user");
   user.sites(function(err, sites) {
@@ -459,7 +459,7 @@ Resellers can create and manage DNS Zones through the BitBalloon API.
 
 Getting a list of DNS Zones:
 
-```js
+```javascript
 client.dnsZones(function(err, zones) {
   console.log(zones);
 });
@@ -467,7 +467,7 @@ client.dnsZones(function(err, zones) {
 
 Getting a specific DNS zone:
 
-```js
+```javascript
 client.dnsZone(id, function(err, zone) {
   console.log(zone);
 });
@@ -475,7 +475,7 @@ client.dnsZone(id, function(err, zone) {
 
 Creating a new zone
 
-```js
+```javascript
 client.createDnsZone({name: "example.com"}, function(err, zone) {
   console.log(zone);
 });
@@ -483,7 +483,7 @@ client.createDnsZone({name: "example.com"}, function(err, zone) {
 
 Deleting a zone
 
-```js
+```javascript
 client.dnsZone(id, function(err, zone) {
   if (err) return console.log(err);
   zone.destroy(function(err) {
@@ -494,7 +494,7 @@ client.dnsZone(id, function(err, zone) {
 
 Getting records for a zone
 
-```js
+```javascript
 zone.records(function(err, records) {
   console.log(records);
 });
@@ -502,7 +502,7 @@ zone.records(function(err, records) {
 
 Getting a specific record
 
-```js
+```javascript
 zone.record(id, function(err, record) {
   console.log(record);
 });
@@ -510,7 +510,7 @@ zone.record(id, function(err, record) {
 
 Adding a new record (supported types: A, CNAME, TXT, MX)
 
-```js
+```javascript
 zone.createRecord({
   hostname: "www",
   type: "CNAME",
@@ -523,7 +523,7 @@ zone.createRecord({
 
 Deleting a record
 
-```js
+```javascript
 record.destroy(function(err) {
   // deleted
 });

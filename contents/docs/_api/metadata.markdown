@@ -7,7 +7,7 @@ Each site has a metadata object. The properties of the metadata object can be us
 
 * `GET /sites/{site_id}/metadata` get the metadata for a site
 
-```json
+```javascript
 {
   "my_meta_key": "my_meta_value"
 }

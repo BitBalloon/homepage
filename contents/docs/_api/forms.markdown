@@ -8,7 +8,7 @@ The `/forms` endpoint allow you to access forms from your BitBalloon sites. You 
 
 * `GET /forms` will return a list of forms
 
-```json
+```javascript
 [
   {
     "id":"ac0865cc46440b1e64666f520e8d88d670c8a2f6",

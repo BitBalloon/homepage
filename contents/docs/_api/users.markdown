@@ -7,7 +7,7 @@ Mainly useful for reseller admins. Lets you access all users under your reseller
 
 * `GET /users` get a list users you have access to
 
-```json
+```javascript
 [
   {
     "id": "52465eb05803543960000015",
