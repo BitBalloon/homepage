@@ -3,15 +3,9 @@ node_js:
 - '0.11'
 env:
   global:
-  - secure: QfCYJKFDlbdThkglYQveCG6S/8L77fsBy8k9lh89WDNm4C6pGfyczi/jtULZZXp0FS4uVs/4bI8xHLZL5Ne4vP380Mjl9RDefpE7Qhplt+ot4MKX3aHcKWpKNMMnxv85qRJ28vUyQbd+R+fcNyjwOtuHOQ6EErgjpL3VjUtxQ2I=
-  - secure: Am2989lFfvpv/V8NRTCoiJZf6had0JZOVdkK4++pDD31w6ftSTqWIzWkQu9vSd6Vg3+QsnOisaH0jOA5GIddFrg4w+rS9BiMJkAXaqSV8sILalRAH+S62/3yVRTSlPsRDBsna2zopZQW6ZDeKC/WImAcY8At+ndR2WP9giyEbHA=
-before_install:
-- travis_retry gem install bitballoon
-script: node_modules/punch/bin/punch g
-after_success: bitballoon deploy output --access-token=$BB_ACCESS_TOKEN --site-id=$BB_SITE_ID
-notifications:
-  hipchat:
-    - secure: "fdFyd9tkC7RnAAnRvWfwikZGkHLq8EhZ8Jy7FAy9QIANUNyzhdEIf6yd3We4FfgjQC2ctYzoi4aw+PnmnRnF1oZdMlKMOlbtr+3/9qZNA3pkwN1GUd/r+dmaTEJI9K2YfBMyaRWKu9rOE6VfUrBNIn02M8v+4xQtt4WfJpgIvXU="
+  - secure: "QUl4nD89mdmbwXgJ/JT13RcvSwKXSBT356xh5WI5yu3LmLoXFFPAAO6WTyee7fjvlQY4H6HlfpFEUNH0wN1mpjM6uuXBn5aMqKfZVbBoqBBlh8lYo5+YV3pbev6+sWGp/L3AOLpRWS/P382vA9Xwsv2RIcWAUvdCFJcecFMxJO4="
+  - secure: "B3yQqcBwhYoYuUpFbJPWdplt4RBnYtYiy/srFqcSK2AGgbpzycUmXzc7XUPpoZpDOS08tpmzvROoLompWNFUMkZFtKUdUeuxKixFvCZ8ZEoRifI1Qem2A1ERu8rNUsenHt43kzh/BPVZvJ4rzzmT9uGDxgpUeGelUTPIWjaFZDU="
+script: node_modules/punch/bin/punch p
 branches:
   only:
     - master

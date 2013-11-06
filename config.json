@@ -61,5 +61,13 @@
     "twitter": {
         "user": "bitballoon"
     }
+  },
+
+  "publishers": {
+    "bitballoon": "punch-bitballoon"
+  },
+
+  "publish" : {
+    "strategy" : "bitballoon"
   }
 }
