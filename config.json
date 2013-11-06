@@ -28,6 +28,10 @@
       ".css": "punch-sass-compiler"
     },
 
+    "publishers": {
+      "bitballoon": "punch-bitballoon"
+    },
+
     "content_handler": "punch-blog-content-handler",
 
     "helpers": {
@@ -61,10 +65,6 @@
     "twitter": {
         "user": "bitballoon"
     }
-  },
-
-  "publishers": {
-    "bitballoon": "punch-bitballoon"
   },
 
   "publish" : {
