@@ -18,6 +18,7 @@
       "/foundation/js/foundation.reveal.js",
       "/foundation/js/foundation.section.js",
       "/foundation/js/foundation.magellan.js",
+      "/js/abalytics.js",
       "/js/prism.js",
       "/js/app.coffee"
     ]
