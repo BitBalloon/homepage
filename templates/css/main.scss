@@ -73,9 +73,6 @@
 }
 
 .reasons {
-  > .row > .large-7 {
-    padding-bottom: 2em;
-  }
   .hosting-partners {
     img { position: relative; top: -.5em }
   }
@@ -111,8 +108,11 @@
   .icon-code {
     margin: .7em auto .9em;
   }
+  .icon-form {
+    margin: .5em auto 0.7em;
+  }
   .icon-cogs {
-    margin: 1em auto 1.2em;
+    margin: .75em auto 1em;
   }
   .icon-dna {
     margin: 0.45em auto 0.65em;
@@ -133,7 +133,7 @@
     width: 3.5em;
     margin-top: -.1em;
   }
-  .three {
+  .four {
     h3 {
       margin-top: 1.8em;
     }
