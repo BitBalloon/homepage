@@ -1,19 +1,16 @@
 
 $ ->
-  ABalytics.init hero_experiment: [
+  ABalytics.init reasons_experiment: [
     name: "ultimate_publishing"
-    experiment1_lead: "The ultimate publishing engine for your HTML5 sites and apps"
+    experiment2_slogan: "Why you'll love BitBalloon"
   ,
     name: "ultimate_hosting"
-    experiment1_lead: "The ultimate hosting & deployment platform for your HTML5 sites and apps"
-  ,
-    name: "complete_hosting"
-    experiment1_lead: "The complete hosting & deployment platform for your HTML5 sites and apps"
+    experiment2_slogan: "Reasons to Host Your Frontend with BitBalloon"
   ]
 
   ABalytics.applyHtml()
 
-  ga('set', 'dimension1', "hero-experiment-" + ABalytics.readCookie("ABalytics_hero_experiment") )
+  ga('set', 'dimension1', "reasons-experiment-A-" + ABalytics.readCookie("ABalytics_reasons_experiment") )
 
   $(".sign-up-button").on 'click', ->
     trackEvent("conversion", "sign-up", "Homepage Sign Up Button Clicked")
