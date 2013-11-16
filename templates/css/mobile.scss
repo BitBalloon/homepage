@@ -6,8 +6,6 @@
   }
 }
 
-
-
 @media #{$medium} {
 
   .chart.numeric h4 {
@@ -54,6 +52,10 @@
     }
     p { margin: 0 auto 1.7em; max-width: 25em; }
     .node { margin: 0 1em 0 0; }
+    .akamai {
+      margin-top: .8em;
+    }
+
   }
 
   header nav .navlink { display: none !important; }
@@ -74,6 +76,17 @@
         padding: 0 24px;
       }
       .spacer { width: 100%; max-width: 175px; }
+    }
+  }
+
+  .blog {
+    header {
+      .entry-title {
+        font-size: 2.1em;
+      }
+    }
+    .entry-content p {
+      font-size: 1.25em;
     }
   }
 
@@ -98,7 +111,7 @@
   .home-hero {
     h2 {
       margin: .4em auto;
-      font-size: 2em;
+      font-size: 2.2em;
     }
     .lead {
       font-size: 1.3em;
@@ -107,10 +120,7 @@
   header .main-nav {
     margin-top: .3em
   }
-  .inline-list.inline-blocks li {
-    display: block;
-    display: none !important;
-  }
+
   .right {
     float: left !important;
   }
@@ -127,6 +137,20 @@
     .new.project-card {
       .spacer { width: 100px; }
       .headline { font-size: 16px; }
+    }
+  }
+
+  .blog header {
+    .entry-title {
+      font-size: 1.4em;
+    }
+    .entry-meta {
+      font-size: .7em;
+    }
+  }
+  .blog {
+    .entry-content p {
+      font-size: 1em;
     }
   }
 

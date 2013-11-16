@@ -11,24 +11,6 @@ $large: "only screen and (max-width:#{$large-screen})";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";
 
-/* We use this media query to add styles to any device that supports media queries */
-@media #{$screen} { }
-
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media #{$small} { }
-
-/* Used to alter styles for screens at least 1280px wide. */
-@media #{$medium} { }
-
-/* Used to alter styles for screens at least 1440px wide. */
-@media #{$large} { }
-
-/* Apply styles to screens in landscape orientation */
-@media #{$landscape} { }
-
-/* Apply styles to screens in portrait orientation */
-@media #{$portrait} { }
-
 /* We also use Modernizr to add a .touch class to the body when applicable */
 /* You can prepend this class to anything and it will style only for touch devices */
 .touch .your-element {}

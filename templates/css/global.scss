@@ -2,7 +2,6 @@ html, body { height: 100%; }
 
 body {
   background: #fff;
-  padding: 0 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,7 +116,6 @@ textarea {
     color: rgb(13, 35, 54);
   }
   .header {
-    margin: -20px -20px 20px;
     padding: 10px 20px;
     // background: rgb(96,132,209);
     background: #2d72d9;
@@ -140,7 +138,7 @@ textarea {
 .main {
   background: rgb(241, 245 , 248);
   background: rgb(232, 235, 238);
-  margin: 0 -40px 30px;
+  margin: 0 0 30px;
   padding: 30px 40px;
   min-height: 700px;
 }
@@ -254,8 +252,7 @@ footer {
 }
 
 header {
-  margin: 10px -40px;
-  padding: 0 40px;
+  margin: 10px 0px;
   position: relative;
   .icon-balloon { float: left; margin-right: 10px; font-size: 52px; }
   .logo {
