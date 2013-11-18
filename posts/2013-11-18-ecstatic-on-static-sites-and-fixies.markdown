@@ -31,17 +31,26 @@ In recent years several things have changed that might be paving the way for the
 
 ### Static sites are hardly as static as they used to be
 
+Some 5 years ago mojombo committed the [first bit of code](https://github.com/mojombo/jekyll/commit/d189e05d236769c1e5594af9db4d6eacb86fc16e) to [Jekyll](https://github.com/mojombo/jekyll), a simple, blog aware, static site generator. Instead of generating the pages dynamically on each page-view, Jekyll processed a template directory, ran it through Liquid and Textile to spit out a complete static site that could be hosted anywhere.
 
+With the emergence of tools like Jekyll, Disqus, Markdown and Twitter and Facebook's JavaScript widgets, static sites suddenly had the upper hand again for the more geeky amongst us. Having all of your site in a Git repository and working with Markdown in your favorite editor can be a much better publishing experience, than typing into a textarea in the browser.
 
+No PHP splattered throughout the templates, made working with the design a more pleasant experience as well, and for most sites the actual dynamic components needed were suddenly covered by cloud services handling commenting and social interactions.
 
-Static sites are coming back because:
+For anybody comfortable working directly with textfiles, with either Git or Dropbox as an easy way of getting distributed, static sites are now generally a better solution than a self-hosted CMS just waiting to blow up during traffic spikes or get hacked if you ever miss out on an update.
 
-their virtues: fastest performance, no security issues, no maintenance, easy to understand and work with, no lock in, future proof - a static site from the dawn of the world wide web will still pretty much just work anywhere
+This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/docs/api) (if you're interested in building something like this as an open, get in touch).
 
-static site generators: http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/, Jekyll, Octopress, Middleman, Punch, and many many more.
+### Beyond sites
 
-not so static anymore: A/B testing, comments, social widgets all bring static sites to life, and there's no backend needed. Even content management: Prismic, Osmek, Contentful
+Since Jekyll we've seen an explosion in static site generators. We're keeping a list at [staticgen.com](http://staticgen.com/) and it's constantly growing. Static site generators are just the beginning, though.
 
-One page apps: Firebase, Parse, Stackmob or custom backend. Decouple the dynamic backend from the static front-end. 
+Just like Disqus made commenting viable for static sites, new backends as services are letting static sites go beyond just sites and into the land of web apps. 
 
+New services like [Prismic](https://prismic.io/) or [Contentful](https://www.contentful.com/) takes care of content management and lets static sites pull content from there through JS APIs.
 
+Hosted database backends like [Firebase](https://www.firebase.com/) or [Parse](https://parse.com/) combined with JavaScript frameworks like Ember or Angular suddenly turns static sites into powerful web apps.
+
+Architecturally this is really neat, since it lets you have all your actual application code in one place (your Ember/Backbone/Angular/Batman app) and handle persistence and authorization in a clean standardized way through your backend as a service of choice.
+
+This is a clean and decoupled model that avoids the architectural mess of having to write both a backend API app and a front-end MVC app often with lots of duplication in terms of model validations. 
