@@ -77,7 +77,10 @@
 .demo-cta {
   font-size: 14px;
   font-weight: 400;
-  a { color: #FFE3B2 }
+  a {
+    color: #FFE3B2;
+    white-space: nowrap;
+  }
 }
 .fade {
   display: block;
@@ -165,6 +168,12 @@
 .try-it-out {
   padding: 2em 0;
 }
+.cta {
+  .dashed-box {
+    padding: 20px 20px 32px;
+  }
+}
+
 
 
 @-webkit-keyframes bopping {
