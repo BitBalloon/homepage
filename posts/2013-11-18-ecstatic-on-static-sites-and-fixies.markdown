@@ -2,7 +2,8 @@
 title: "Ecstatic: static sites & fixies"
 author: Mathias Biilmann
 published: true
-description: Hmm
+description: Why static sites are not a fad and will continue to grow in their role as a foundational part of the web.
+image: /img/posts/fixie.jpg
 ---
 
 ![Fixie - THE MANHAPPENI from Solè](/img/posts/fixie.jpg)
