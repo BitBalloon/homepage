@@ -32,7 +32,7 @@ font-style: normal;
     font-style: normal;
 }
 
-[class*="icon-"] {
+[class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -177,4 +177,10 @@ font-style: normal;
 }
 .icon-cogs:before {
     content: "\e62b";
+}
+.icon-arrow-down:before {
+    content: "\e62c";
+}
+.icon-angle-down:before {
+    content: "\e62d";
 }
