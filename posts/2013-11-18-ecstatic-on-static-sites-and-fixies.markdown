@@ -1,5 +1,5 @@
 ---
-title: "Ecstatic: static sites and fixies"
+title: "Ecstatic: static sites & fixies"
 author: Mathias Biilmann
 published: true
 description: Hmm
