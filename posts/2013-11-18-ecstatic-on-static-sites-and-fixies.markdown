@@ -39,18 +39,18 @@ No PHP splattered throughout the templates, made working with the design a more 
 
 For anybody comfortable working directly with textfiles, with either Git or Dropbox as an easy way of getting distributed, static sites are now generally a better solution than a self-hosted CMS just waiting to blow up during traffic spikes or get hacked if you ever miss out on an update.
 
-This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/docs/api) (if you're interested in building something like this as an open, get in touch).
+This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/docs/api) (if you're interested in building something like this as an open source project, get in touch!).
 
 ### Beyond sites
 
 Since Jekyll we've seen an explosion in static site generators. We're keeping a list at [staticgen.com](http://staticgen.com/) and it's constantly growing. Static site generators are just the beginning, though.
 
-Just like Disqus made commenting viable for static sites, new backends as services are letting static sites go beyond just sites and into the land of web apps. 
+Just like Disqus made commenting viable for static sites, new backends as services are letting static sites go beyond just sites and into the land of web apps.
 
 New services like [Prismic](https://prismic.io/) or [Contentful](https://www.contentful.com/) takes care of content management and lets static sites pull content from there through JS APIs.
 
-Hosted database backends like [Firebase](https://www.firebase.com/) or [Parse](https://parse.com/) combined with JavaScript frameworks like Ember or Angular suddenly turns static sites into powerful web apps.
+Hosted database backends like [Firebase](https://www.firebase.com/) or [Parse](https://parse.com/) combined with JavaScript frameworks like Ember or Angular suddenly   turn static sites into powerful web apps.
 
 Architecturally this is really neat, since it lets you have all your actual application code in one place (your Ember/Backbone/Angular/Batman app) and handle persistence and authorization in a clean standardized way through your backend as a service of choice.
 
-This is a clean and decoupled model that avoids the architectural mess of having to write both a backend API app and a front-end MVC app often with lots of duplication in terms of model validations. 
+This is a clean and decoupled model that avoids the architectural mess of having to write both a backend API app and a front-end MVC app often with lots of duplication in terms of model validations.
