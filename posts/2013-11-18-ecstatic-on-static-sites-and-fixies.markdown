@@ -26,7 +26,7 @@ Smalltalk dropped out of the mainstream, but years later lots of the same ideas 
 
 The basic appeal of a static website is easy to understand: there's no beating a static HTML document for performance, there's zero maintenance involved, scaling to large amounts of traffic is straight forward, the security issues that often plague dynamic sites are non-existent and they've proven to be future proof: the [first website ever made](http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html) works just fine in a modern browser.
 
-There are also obvious reasons why dynamic sites became the norm. Editing HTML by hand quickly gets painful. It's fine for marking up a design, but when actually working with content it's way to much overhead, and today it's impossible to imagine managing a large website in plain HTML without any way to avoid duplicating navigation elements, common headers and footers, sidebars etc, and manually generating list of most recent items, etc, etc.
+There are also obvious reasons why dynamic sites became the norm. Editing HTML by hand quickly gets painful. It's fine for marking up a design, but when actually working with content it's way to much overhead, and today it's impossible to imagine managing a large website in plain HTML without any way to avoid duplicating navigation elements, common headers and footers, sidebars etc, and manually generating lists of most recent items, etc, etc.
 
 "Web 2.0" also brought a new focus on user-submitted content and social interactions, that just didn't jive with static sites.
 
@@ -44,7 +44,7 @@ For anybody comfortable working directly with text-files, static sites are now g
 
 This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/docs/api).
 
-This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/docs/api) (if you're interested in building something like this as an open source project, get in touch!).
+_(if you're interested in building something like this as an open source project, get in touch!)_
 
 ### Beyond sites
 
@@ -68,13 +68,15 @@ A typical CRUD web-app used to look something like this:
 
 ![Standard CRUD Web-app architecture](/img/posts/standard-app.png)
 
-All the codes lives in one place in one monolithic Rails/Django/Whatever app, that responds to a browser with HTML. It's a clean and manageable model, but it starts breaking down once users start expecting a much more interactive experience in the browser:
+All the codes lives in one place in one monolithic Rails/Django/Whatever app, that responds to a browser with HTML.
+
+It's a clean and manageable model, but it starts breaking down once users start expecting a much more interactive experience in the browser:
 
 ![Duplicated App](/img/posts/browser-server-app.png)
 
 Suddenly we have two apps. Often even in two different programming languages and typically with a lot of duplication between model validations and similar concerns. Everybody who's tried this approach will know that it's clunkier than it needs to be
 
-Frameworks like Meteor tries to solve it by making everything one big app - the client-site, the server-side, with the DB layer just being synced between the two magically. This is really fun when you get going, but architecturally it seems everything is incredibly tightly coupled and it creates issues once you need to also expose your data outside of the browser (iPhone apps, etc).
+Frameworks like Meteor tries to solve it by making everything one big app — the client-site, the server-side, with the DB layer just being synced between the two magically. This is really fun when you get going, but architecturally it seems everything is incredibly tightly coupled and it creates issues once you need to also expose your data outside of the browser (iPhone apps, etc).
 
 The combination of a static site and something like Firebase gets you a far cleaner architecture:
 
