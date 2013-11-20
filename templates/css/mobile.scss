@@ -41,6 +41,11 @@
   }
   #reasons {
     text-align: center;
+    .forms-list {
+      max-width: 17.1em;
+      margin: 0 auto 2em;
+      text-align: left;
+    }
     h3 { margin-top: 1em !important; }
     .large-3 {
       img, i { margin-bottom: 0 !important; }
