@@ -2,12 +2,9 @@ var _ = require("underscore");
 var path = require("path");
 
 var helper_utils = require("punch").Utils.Helper;
-var path_utils = require("punch").Utils.Path;
 var blog_content_handler = require("punch-blog-content-handler");
 
 
-var homepage_posts = 10;
-var teaser_length = 2;
 var read_next_posts = [];
 
 
