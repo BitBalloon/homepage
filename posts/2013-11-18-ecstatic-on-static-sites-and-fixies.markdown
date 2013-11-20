@@ -54,9 +54,9 @@ We're keeping a list at [staticgen.com](http://staticgen.com/) and it's constant
 
 Just like Disqus made commenting viable for static sites, new backends as services are letting static sites go beyond just sites and into the land of web apps.
 
-New services like [Prismic](https://prismic.io/) or [Contentful](https://www.contentful.com/) takes care of content management and lets static sites pull content into a static site from there through their JavaScript APIs.
+New services like [Prismic](https://prismic.io/) or [Contentful](https://www.contentful.com/) takes care of content management and let static sites pull in content from there through their JavaScript APIs.
 
-Hosted database backends like [Firebase](https://www.firebase.com/) or [Parse](https://parse.com/) combined with JavaScript frameworks like Ember or Angular suddenly   turn static sites into powerful web apps.
+Hosted database backends like [Firebase](https://www.firebase.com/) or [Parse](https://parse.com/) combined with JavaScript frameworks like Ember or Angular suddenly turn static sites into powerful web apps.
 
 Architecturally this is really neat, since it lets you have all your actual application code in one place (your Ember/Backbone/Angular/Batman app) and handle persistence and authorization in a clean standardized way through your backend as a service of choice.
 
@@ -68,7 +68,7 @@ A typical CRUD web-app used to look something like this:
 
 ![Standard CRUD Web-app architecture](/img/posts/standard-app.png)
 
-All the codes lives in one place in one monolithic Rails/Django/Whatever app, that responds to a browser with HTML.
+All the code lives in one place in one monolithic Rails/Django/Whatever app, that responds to a browser with HTML.
 
 It's a clean and manageable model, but it starts breaking down once users start expecting a much more interactive experience in the browser:
 
