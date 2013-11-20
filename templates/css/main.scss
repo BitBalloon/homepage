@@ -582,17 +582,40 @@ $number-size: 70px;
       margin: .5em auto 1em;
     }
   }
-  .social-content, .entry-content {
+  .social-content, .entry-content, .read-next {
     max-width: 42em;
-    margin: 0 auto 5em;
+    margin: 0 auto 3em;
   }
   .entry-content {
     p { font-size: 1.4em; }
+    hr:last-of-type {
+      margin-top: 5em;
+    }
   }
   img {
     margin: 0 auto;
     display: block;
     border-radius: 4px;
+  }
+}
+
+.read-next {
+  h5 {
+    color: gray;
+    margin-bottom: 1em;
+    font-size: .92em;
+  }
+  .title {
+    margin-bottom: 0em;
+  }
+  .description {
+    margin-bottom: .5em;
+    font-size: 1em;
+  }
+  .author {
+    font-size: 12px;
+    color: #808080;
+    margin-bottom: 2em;
   }
 }
 

@@ -19,9 +19,20 @@
           <div class="entry-content">
             <hr/>
             {{{content}}}
+            <hr/>
+          </div>
+
+          <div class="read-next">
+            <h5>NEXT TO READ</h4>
+           {{#read_next_posts}}
+              <h4><a href="{{ permalink }}">{{ title }}</a></h4>
+              <p class="description">{{{ description }}}</p>
+              <p class="author">An article by {{author}}</p>
+            {{/read_next_posts}}
           </div>
 
           <div class="social-content">
+            <hr/>
             <div id="disqus_block">
               {{{disqus_snippet}}}
             </div>
