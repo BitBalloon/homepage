@@ -191,12 +191,46 @@
   }
 }
 
+
+
+
+.home-footer {
+  position: relative;
+  background: url("/img/sky-footer.jpg");
+  background-size: cover;
+  padding-bottom: 2em;
+  .white-bg {
+    position: absolute;
+    height: 136px;
+    background: white;
+    width: 100%;
+  }
+  .white-fade {
+    position: absolute;
+    height: 67px;
+    top: 133px;
+    width: 100%;
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  }
+}
+
 .try-it-out {
   padding: 2em 0;
 }
 .cta {
   .dashed-box {
     padding: 20px 20px 32px;
+    margin: 5em auto 2em;
+    border-color: white;
+    i, .headline {
+      color: white;
+    }
   }
 }
 

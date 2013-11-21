@@ -1,6 +1,6 @@
 ## The Basics
 
-BitBalloon is essentially an tool that deploys front end assets onto a really high performance hosting setup. A BitBalloon deployment is a "site aware" process that optimizes asset performance and activates the web forms.
+At its core, BitBalloon is a tool for deploying front end assets onto highly scalable and programmable cloud hosting. BitBalloon deployment is a "site aware" process. When you deploy a site, BitBalloon will find all your CSS, JS & Images and automatically optimize them. It will also go on to setup a database for any forms it finds in the HTML.
 
 There are two ways to deploy a site:
 

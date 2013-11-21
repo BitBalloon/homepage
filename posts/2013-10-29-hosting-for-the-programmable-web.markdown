@@ -37,15 +37,15 @@ Once it has this contextual awareness of how your site works, BitBalloon essenti
 
 You can use the OAuth2 based API that BitBalloon sets up for your site to do meaningful work, even if you don't know the first thing about HTTP!
 
-BitBalloon's API is integrated with <a href="http://www.zapier.com">Zapier</a>, an API marketplace which provides a point and click interface to wire up business logic for our site like hooking your forms into a CRM platform or making a service like Twillio send a text message when a submission comes in.
+BitBalloon's API is integrated with <a href="http://www.zapier.com">Zapier</a>, an API marketplace which provides a point and click interface to wire up business logic for your site like hooking your forms into a CRM platform or making a service like Twillio send a text message when a submission comes in.
 
 The combination of BitBalloon and Zapier means that instead of being forced to figure out how to implement some obscure network protocol, you're finally in control of telling machines what to do!
 
 ### Open Platform
 
-Our quest for a much more accessible and API-driven hosting platform is just getting started. And it doesn't stop with our direct customers, BitBalloon's underlying infrastructure is open for other programmers to leverage in their own services.
+We've deliberately built BitBalloon as an open API so that other other programmers can leverage our hosting engine to power a web authoring component inside their own apps and services.
 
-If you're building web authoring tools, you can use BitBalloon's infrastructure to empower your users with "site aware", API-backed web publishing under your own brand.
+We also offer a white label version for those with fully custom branding requirements.
 
 We'd love to hear what you think of all this, and can't wait to see you build with BitBalloon and the programmable web!
 
