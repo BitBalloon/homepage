@@ -1,19 +1,22 @@
 ## The Basics
 
+BitBalloon is essentially an tool that deploys front end assets onto a really high performance hosting setup. A BitBalloon deployment is a "site aware" process that optimizes asset performance and activates the web forms.
 
-BitBalloon is first and foremost an API for deploying static sites onto the programmable web. There's two ways to deploy: dragging a site onto the drop-zone or by making an API call.
+There are two ways to deploy a site:
 
-Either way, the deployment is an automated process where BitBalloon analyzes your site, optimizes the assets and deploys it onto highly scalable, programmable hosting.
+ 1. Drag it onto a drop-zone
+ 2. Make a call to the API
 
-When you first deploy a site, a URL gets generated for it, similar in format to:<br/> http://cowboy-system-73843.bitballoon.com
 
-<div class="panel">
-This overview covers the features which are exposed in the UI. Read up on the <a href="/docs/api#sites">API</a> to learn about driving the BitBalloon pro grammatically.
-</div>
+When a site is first deployed, a public URL is generated for it. Here's the url of our demo site:<br/> http://cowboy-system-73843.bitballoon.com
 
-### Site Management
 
-Each site has a set of admin tools for managing the:
+### The Dashboard
+
+Every site has its own dashboard which can be accessed from a url similar to:
+https://www.bitballoon.com/sites/cowboy-system-73843
+
+It provides tools for managing various aspects of your site, such as:
 
 * site name
 * domain
@@ -22,14 +25,17 @@ Each site has a set of admin tools for managing the:
 * deploys
 * code snippets
 
-The admin tools can be accessed from a private dashboard at a URL similar to:
-https://www.bitballoon.com/sites/cowboy-sysxtem-73843
+
 
 ### Form Handling
 
-During a deployment, BitBalloon finds any forms in your HTML which don't already have an action attribute and automatically makes them work.
+During a deployment, BitBalloon finds any forms in your HTML which don't already have an action attribute and automatically hooks them up to their own database.
 
-You can export form data and setup email notifications of new submissions in the site's dashboard. Form events and data can also be accessed via the <a href="/docs/api#forms">API</a>. BitBalloon's integration with API marketplaces like <a href="/docs/zapier">Zapier</a> makes it simple to hook form submissions into hundreds of useful 3rd party services without having to do any programming!
+The site dashboard has a "Forms" tab where you can view submissions to your forms, setup email notifications & export data.
+
+BitBalloon forms can act as a trigger service in <a href="/docs/zapier">Zapier</a> which provides point and click tools to connect those form submissions with other cloud services!
+
+As with every other BitBalloons feature, form data and events are accessible from the <a href="https://github.com/BitBalloon/bitballoon-api">API</a>.
 
 For best results, set name attributes on the form and it's inputs, like so:
 
