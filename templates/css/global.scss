@@ -256,14 +256,14 @@ footer {
 }
 
 header {
-  margin: 10px 0px;
+  margin: 10px 0px 5px;
   position: relative;
-  .icon-balloon { float: left; margin-right: 10px; font-size: 52px; }
+  .icon-balloon { float: left; margin-right: 10px; font-size: 40px; }
   .logo {
     color: #fff;
     display: block;
     margin: 10px 0 12px;
-    height: 0.8em;
+    height: 40px;
   }
   .claim {
     font-size: 16px;
@@ -273,7 +273,7 @@ header {
   }
   h1 { margin: 0; }
   .main-nav {
-    margin: 1.33em 0 0 0;
+    margin: .9em 0 0 0;
     > li {
       margin: 0 1.8em .4em 0;
       font-size: 16px;
