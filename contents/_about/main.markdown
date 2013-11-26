@@ -31,3 +31,7 @@ Each site also comes with an API that's modeled after Zapier's [perfect API](htt
 ### Why a balloon?
 
 Deploying optimized sites and apps should be fun & simple instead of unnecessarily complicated. We chose a balloon because, like a static site, it has no moving parts and derives it's virtue from being light, lighter than the air around it!
+
+### Who are you guys?
+
+BitBalloon is brought to you by the team behind [Webpop](http://www.webpop.com), a cloud based platform for developing dynamic websites. We created BitBalloon to provide a focused solution for situations where a static site or app makes more sense.

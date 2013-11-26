@@ -1,7 +1,12 @@
 $tooltip-font-weight: 200;
 $tooltip-font-size: 14px;
 
+$flex-video-padding-top: 0;
+$flex-video-margin-bottom: 1em;
+$flex-video-widescreen-padding-bottom: 56.2%;
+
 @import "../foundation/scss/foundation.scss";
+
 @import "medium_grid.scss";
 @import "prettify.scss";
 @import "fonts.scss";
@@ -9,3 +14,4 @@ $tooltip-font-size: 14px;
 @import "global.scss";
 @import "main.scss";
 @import "mobile.scss";
+

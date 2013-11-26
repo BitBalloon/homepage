@@ -28,7 +28,6 @@ var fetch_content = function(basepath,callback) {
 
       var fetch_full_posts = function() {
         if (read_next_posts_list.length) {
-          console.log("fetch " + read_next_posts_list );
 
           blog_content_handler.getPost(path.join(read_next_posts_list.shift().permalink, "index"), function(err, post_contents) {
 
