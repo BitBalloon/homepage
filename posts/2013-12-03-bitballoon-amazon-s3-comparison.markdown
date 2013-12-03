@@ -15,7 +15,7 @@ BitBalloon manages static sites.
 
 S3, as it's name implies, is a low-level utility. Beyond the "bucket" you upload files to, S3 makes no assumptions about files you upload to it and the role they play in composing an actual website.
 
-BitBalloon is the other way around. It solves specific challenges around publishing and managing actual static sites by dealing with files you upload to it in an "site aware" manner.
+BitBalloon is the other way around. It solves specific challenges around publishing and managing actual static sites by dealing with files you upload to it in a "site aware" manner.
 
 If you’re looking to add static site publishing component into a SaaS web authoring tool, it's possible to do with S3, but there's a surprising number of gotchas you have to work around.
 
@@ -50,5 +50,7 @@ BitBalloon parses the uploaded HTML for forms and automatically connects them up
 ### Versioning
 
 S3 can enable versioning for individual files. BitBalloon automatically stores a complete version for each deploy, so you can always go back to review an earlier version or do a rollback.
+
+### Conclusion
 
 We have lots more features on the roadmap as well and we're always open to your suggestions for what else we can do to create the ultimate static site hosting API!
