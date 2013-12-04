@@ -3,7 +3,10 @@ title: "BitBalloon vs Amazon S3"
 author: Matthias Biilmann
 published: false
 description: How Amazon S3 and BitBalloon compares as a static site hosting platform.
+image: /img/posts/apple-orange.jpg
 ---
+
+![Apples to Oranges](/img/posts/apple-orange.jpg)
 
 This morning’s inbox had an email from a potential reseller customer, asking how BitBalloon compares to Amazon S3. How our fledgling platform differentiates itself from this static hosting giant is an important question that I’d like to answer publicly. In short:
 
