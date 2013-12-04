@@ -1,18 +1,16 @@
 ---
 title: "BitBalloon vs Amazon S3"
 author: Matthias Biilmann
-published: false
+published: true
 description: How Amazon S3 and BitBalloon compares as a static site hosting platform.
 image: /img/posts/apple-orange.jpg
 ---
 
 ![Apples to Oranges](/img/posts/apple-orange.jpg)
 
-This morning’s inbox had an email from a potential reseller customer, asking how BitBalloon compares to Amazon S3. How our fledgling platform differentiates itself from this static hosting giant is an important question that I’d like to answer publicly. In short:
+This morning’s inbox had an email from a potential reseller customer, asking how BitBalloon compares to Amazon S3. It's not the first time we've gotten this question, so I decided to take the opportunity to do a proper writeup about the differences between BitBalloon and S3.
 
-Amazon S3 manages static files.
-
-BitBalloon manages static sites.
+In short: S3 manages files. BitBalloon manages sites.
 
 ### Level of Abstraction
 
@@ -44,16 +42,16 @@ S3 doesn’t do atomic deploys. So typically if you deploy a new version of the 
 
 BitBalloon will process all your assets during each deploy and create unique urls for each piece of content, set far future caching headers and update the HTML to refer to the CDN URLs of the new bundled, minified and cache-optimized assets. We also run all images through lossless image optimization.
 
-Often sites deployed to BitBalloon will get close to 100/100 score on Pingdom Speed Test tool because of all that web perf optimization. Obviously if you want to achieve a similar result on S3/Cloudfront, it takes quite a bit of work to get it all right.
+Often sites deployed to BitBalloon will get close to 100/100 score on Pingdom Speed Test tool because of all those web performance optimizations. Obviously if you want to achieve a similar result on S3/Cloudfront, it takes quite a bit of work to get it all right.
 
 ### Form processing
 
-BitBalloon parses the uploaded HTML for forms and automatically connects them up to an API-accessible database. All the other HTML tags work on static sites, why shouldn’t forms as well?! There's nothing like this for S3.
+BitBalloon parses the uploaded HTML for forms and automatically connects them up to an API-accessible database. All the other HTML tags work on static sites, forms should work too! There's nothing like this for S3.
 
 ### Versioning
 
-S3 can enable versioning for individual files. BitBalloon automatically stores a complete version for each deploy, so you can always go back to review an earlier version or do a rollback.
+S3 can enable versioning for individual files. BitBalloon automatically stores a complete version for each deploy, so you can always review or rollback to a earlier version.
 
-### Conclusion
+### Stay tuned for more
 
-We have lots more features on the roadmap as well and we're always open to your suggestions for what else we can do to create the ultimate static site hosting API!
+We have lots more features on the roadmap as well and we're always open to your suggestions for what else we can do to create the ultimate platform for static site hosting.
