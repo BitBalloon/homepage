@@ -1,12 +1,13 @@
 ## The Basics
 
-At its core, BitBalloon is a tool for deploying front end assets onto highly scalable and programmable cloud hosting. BitBalloon deployment is a "site aware" process. When you deploy a site, BitBalloon will find all your CSS, JS & Images and automatically optimize them. It will also go on to setup a database for any forms it finds in the HTML.
+BitBalloon deploys static sites from your local development into production in a single "site aware" step. When you deploy a site, BitBalloon automatically optimizes all the CSS, JavaScript & images your site references.
+
+It also sets up a database to process any submissions to forms in your HTML.
 
 There are two ways to deploy a site:
 
  1. Drag it onto a drop-zone
  2. Make a call to the API
-
 
 When a site is first deployed, a public URL is generated for it. Here's the url of our demo site:<br/> http://cowboy-system-73843.bitballoon.com
 
@@ -18,35 +19,38 @@ https://www.bitballoon.com/sites/cowboy-system-73843
 
 It provides tools for managing various aspects of your site, such as:
 
-* site name
-* domain
-* privacy
-* form submissions
 * deploys
-* code snippets
+* site name
+* custom domain
+* form submissions
+* password protection
+* footer code snippets
 
 
 
 ### Form Handling
 
-During a deployment, BitBalloon finds any forms in your HTML which don't already have an action attribute and automatically hooks them up to their own database.
+Here's an example of a regular web form that will automatically work on BitBalloon.
 
-The site dashboard has a "Forms" tab where you can view submissions to your forms, setup email notifications & export data.
-
-BitBalloon forms can act as a trigger service in <a href="/docs/zapier">Zapier</a> which provides point and click tools to connect those form submissions with other cloud services!
-
-As with every other BitBalloons feature, form data and events are accessible from the <a href="https://github.com/BitBalloon/bitballoon-api">API</a>.
-
-For best results, set name attributes on the form and it's inputs, like so:
 
 ```markup
-<form name="signup">
+<form name="signup" action="thank-you.html">
   First Name: <input type="text" name="first_name">
   Email: <input type="email" name="email">
-  <input type="submit">
+  <button>Sign me up</button>
 </form>
 ```
 
+The <strong>name</strong> attributes on the form and input tags tell the database how to label the data.
+
+
+The <strong>action</strong> attribute on the form tag specifies a url path to show a custom success page when the form is submitted. Use a full path with a .html suffix file to easily test out your form success page in local development. When you deploy the site, BitBalloon will automatically "prettify" the url.
+
+If the form action is left blank, a default BitBalloon form success page will be shown.
+
+Form submissions are accessible from the "Forms" tab in your site dashboard. Here you can also setup email notifications and export the form submissions as a .csv file.
+
+As with every other BitBalloons feature, form submissions are accessible from the <a href="https://github.com/BitBalloon/bitballoon-api">API</a>. Checkout our <a href="/docs/zapier">Zapier integration</a> to connect your BitBalloon forms to hundreds of useful cloud services without doing any programming!
 
 
 ### Snippets
@@ -56,4 +60,4 @@ Code snippets can be injected into the footer of every page of a site. The snipp
 
 ### Versions
 
-Every time a site is updated in any way, a new version is created. Deployment history is accessible from the site dashboard and you can restore any version to represent your live site at any time.
+Every time a site is updated, a new version is created. The "Versions" tab in your site dashboard lets you view and rollback to any version, anytime.

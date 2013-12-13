@@ -1,15 +1,16 @@
 ---
 title: "BitBalloon vs Amazon S3"
 author: Matthias Biilmann
-published: false
+published: true
 description: How Amazon S3 and BitBalloon compares as a static site hosting platform.
+image: /img/posts/apple-orange.jpg
 ---
 
-This morning’s inbox had an email from a potential reseller customer, asking how BitBalloon compares to Amazon S3. It's not the first time we've gotten this question, so I decided to take the opportunity to do a proper writeup about the differences between BitBalloon and S3. In short:
+![Apples to Oranges](/img/posts/apple-orange.jpg)
 
-Amazon S3 manages static files.
+This morning’s inbox had an email from a potential reseller customer, asking how BitBalloon compares to Amazon S3. It's not the first time we've gotten this question, so I decided to take the opportunity to do a proper writeup about the differences between BitBalloon and S3.
 
-BitBalloon manages static sites.
+In short: S3 manages files. BitBalloon manages sites.
 
 ### Level of Abstraction
 
@@ -45,11 +46,11 @@ Often sites deployed to BitBalloon will get close to 100/100 score on Pingdom Sp
 
 ### Form processing
 
-BitBalloon parses the uploaded HTML for forms and automatically connects them up to an API-accessible database. All the other HTML tags work on static sites, why shouldn’t forms as well?! There's nothing like this for S3.
+BitBalloon parses the uploaded HTML for forms and automatically connects them up to an API-accessible database. All the other HTML tags work on static sites, forms should work too! There's nothing like this for S3.
 
 ### Versioning
 
-S3 can enable versioning for individual files. BitBalloon automatically stores a complete version for each deploy, so you can always go back to review an earlier version or do a rollback.
+S3 can enable versioning for individual files. BitBalloon automatically stores a complete version for each deploy, so you can always review or rollback to a earlier version.
 
 ### Stay tuned for more
 
