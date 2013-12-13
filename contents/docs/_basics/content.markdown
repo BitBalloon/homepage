@@ -28,6 +28,7 @@ It provides tools for managing various aspects of your site, such as:
 
 
 
+<a name="form-handling"/></a>
 ### Form Handling
 
 Here's an example of a regular web form that will automatically work on BitBalloon.
@@ -46,7 +47,7 @@ The <strong>name</strong> attributes on the form and input tags tell the databas
 
 The <strong>action</strong> attribute on the form tag specifies a url path to show a custom success page when the form is submitted. Use a full path with a .html suffix file to easily test out your form success page in local development. When you deploy the site, BitBalloon will automatically "prettify" the url.
 
-If the form action is left blank, a default BitBalloon form success page will be shown.
+If the form action is left blank, or the html page you are pointing it to does not exist, a default BitBalloon form success page will be shown.
 
 Form submissions are accessible from the "Forms" tab in your site dashboard. Here you can also setup email notifications and export the form submissions as a .csv file.
 
