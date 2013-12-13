@@ -1,7 +1,7 @@
 ---
 title: "Continuous Deployment for Jekyll sites"
 author: Matthias Biilmann
-published: false
+published: true
 description: "Using BitBalloon and TravisCI to get continuous deployments for Jekyll sites without GitHub pages' limitations"
 ---
 
@@ -39,7 +39,7 @@ The first time you deploy, you'll be prompted for your BitBalloon API credential
 
 Now your Jekyll site will be up and running on BitBalloon. The `bitballoon deploy` command will store your access token and your site ID in a hidden `.bitballoon` file. Make sure to add this file to your `.gitignore` since you'll never want to share your BitBalloon access token with the world.
 
-Now you can run `bitballoon deploy _site` at any time and your site will be updated without any prompt.
+With this in place you can run `bitballoon deploy _site` at any time and your site will be updated without any prompt.
 
 ## Configuring TravisCI
 
@@ -47,7 +47,7 @@ If you haven't done it already, sign up for [Travis CI](https://travis-ci.org) w
 
 To get it to listen to your new Jekyll repository, go to your profile page inside Travis, find the new repository and toggle the switch on. Now Travis is ready to run a build when you push to GitHub, but we still need to tell Travis how to build and deploy a Jekyll site.
 
-To do this you need to add aa `.travis.yml` configuration file to the root of your repository:
+To do this you need to add a `.travis.yml` configuration file to the root of your repository:
 
 ```yaml
 language: ruby
@@ -61,7 +61,7 @@ branches:
     - master
 ```
 
-Before you're ready to push, you need to add some encrypted variables to the Travis configuration, so you can reference your BitBalloon access token without sharing with the world:
+Before you're ready to push, you need to add some encrypted variables to the Travis configuration, so you can reference your BitBalloon access token without sharing it with the world:
 
 ```bash
 gem install travis
