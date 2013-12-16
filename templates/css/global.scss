@@ -38,6 +38,11 @@ a.no-link-style {
 hr {
   border-color: #C4DCE7;
 }
+hr.extra-space {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 pre {
   position: relative;
   margin: 0 0 1.5em 0;
@@ -256,9 +261,9 @@ footer {
 }
 
 header {
-  margin: 10px 0px 5px;
+  margin: 10px 0px;
   position: relative;
-  .icon-balloon { float: left; margin-right: 10px; font-size: 40px; }
+  .icon-balloon { float: left; margin-right: 10px; font-size: 57px; }
   .logo {
     color: #fff;
     display: block;
@@ -267,13 +272,13 @@ header {
   }
   .claim {
     font-size: 16px;
-    margin: -10px 0 10px;
+    margin: -10px 0 10px 32px;
     font-weight: 400;
     line-height: 1em;
   }
   h1 { margin: 0; }
   .main-nav {
-    margin: .9em 0 0 0;
+    margin: 1.5em 0 0 0;
     > li {
       margin: 0 1.8em .4em 0;
       font-size: 16px;
@@ -457,7 +462,8 @@ header {
   background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   padding: 20px 20px 40px;
-  margin-top: 20px;
+  max-width: 72em;
+  margin: 20px auto;
   header {
     margin: 0 0 30px;
     padding: 0;

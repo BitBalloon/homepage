@@ -1,5 +1,11 @@
 /*** HOME ****************************************/
 
+.home header {
+  .icon-balloon { font-size: 42px; }
+  .claim { display: none; }
+  .main-nav { margin-top: 1em; }
+}
+
 .dropzone {
   color: #fff;
   position: relative;
@@ -627,9 +633,6 @@ $number-size: 70px;
   }
   .entry-content {
     p { font-size: 1.4em; }
-    hr:last-of-type {
-      margin-top: 5em;
-    }
   }
   img {
     margin: 0 auto;
