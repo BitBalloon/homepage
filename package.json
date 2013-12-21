@@ -6,7 +6,7 @@
   "dependencies": {
     "punch": "0.5.38",
     "punch-sass-compiler": "0.0.3",
-    "punch-blog-content-handler": ">= 0.0.9",
+    "punch-blog-content-handler": "0.0.9",
     "punch-bitballoon": ">= 0.0.1",
     "underscore": ">= 1.4.2"
   }

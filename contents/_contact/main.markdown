@@ -2,7 +2,7 @@
 
 Questions? Comments? Drop us a note!
 
-<form accept-charset="UTF-8" action="/contact" method="post">
+<form accept-charset="UTF-8" name="contact" action="/contact" method="post">
   <p>
     <label>Your Name</label>
     <input name="name" type="text" required>

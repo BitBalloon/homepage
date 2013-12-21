@@ -1,6 +1,6 @@
 ---
 title: "Continuous Deployment for Jekyll sites"
-author: Matthias Biilmann
+author: Mathias Biilmann
 published: true
 description: "Using BitBalloon and TravisCI to get continuous deployments for Jekyll sites without GitHub pages' limitations"
 ---
