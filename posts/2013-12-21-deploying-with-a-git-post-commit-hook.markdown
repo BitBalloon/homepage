@@ -3,7 +3,6 @@ title: "Deploy a static site from a git post commit hook"
 author: Mathias Biilmann
 published: true
 description: "Deploy your site to BitBalloon every time you do a new git commit"
-image: /img/posts/deploy-bot.svg
 ---
 
 For small personal projects, you might want to do a new deploy whenever you do a git commit. BitBalloon's command line tools make it easy to set this up.
