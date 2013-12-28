@@ -4,7 +4,7 @@
   "author": "BitBalloon <team@bitballoon.com>",
   "description": "The homepage of BitBalloon",
   "dependencies": {
-    "punch": "0.5.38",
+    "punch": "0.5.41",
     "punch-sass-compiler": "0.0.3",
     "punch-blog-content-handler": "0.0.9",
     "punch-bitballoon": ">= 0.0.1",

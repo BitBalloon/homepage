@@ -1,11 +1,17 @@
 {
-	"site-title": "BitBalloon",
+  "site-title": "BitBalloon",
+    "header-navbar": [
+      {"label": "Features", "href": "/features"},
+      {"label": "Pricing", "href": "/pricing"},
+      {"label": "Blog", "href": "/blog"},
+      {"label": "Documentation", "href": "/docs"}
+    ],
     "footer-navbar": [
-    {"label": "About", "href": "/about"},
-    {"label": "Partner", "href": "/partner"},
-    {"label": "Docs", "href": "/docs"},
-    {"label": "Blog", "href": "/blog"},
-    {"label": "Contact", "href": "/contact"},
-    {"label": "Privacy & Terms", "href": "/tos"}
+      {"label": "About", "href": "/about"},
+      {"label": "Partner", "href": "/partner"},
+      {"label": "Docs", "href": "/docs"},
+      {"label": "Blog", "href": "/blog"},
+      {"label": "Contact", "href": "/contact"},
+      {"label": "Privacy & Terms", "href": "/tos"}
     ]
 }
